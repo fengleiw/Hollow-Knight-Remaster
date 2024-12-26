@@ -15,7 +15,7 @@ public class Buzzer : EnemyController
     protected override void Update()
     {
         base.Update();
-        if (!PlayerController.instance.pState.alive)
+        if (!PlayerController.Instance.pState.alive)
         {
             ChangeState(EnemyStates.Buzzer_Idle);
         }
@@ -23,7 +23,7 @@ public class Buzzer : EnemyController
     protected override void UpdateEnemyState() //fixed
     {
         
-        float _dist = Vector2.Distance(transform.position, PlayerController.instance.transform.position); 
+        float _dist = Vector2.Distance(transform.position, PlayerController.Instance.transform.position); 
         switch (GetCurrentEnemyState)
         {
             case EnemyStates.Buzzer_Idle:
@@ -37,7 +37,7 @@ public class Buzzer : EnemyController
                 break;
 
             case EnemyStates.Buzzer_Chase:
-                rb.MovePosition(Vector2.MoveTowards(transform.position, PlayerController.instance.transform.position, Time.deltaTime * speed)); 
+                rb.MovePosition(Vector2.MoveTowards(transform.position, PlayerController.Instance.transform.position, Time.deltaTime * speed)); 
 
                 FlipBuzzer();
                 if(_dist > chaseDistance)
@@ -65,7 +65,7 @@ public class Buzzer : EnemyController
     void FlipBuzzer()
     {
 
-        sr.flipX =  PlayerController.instance.transform.position.x > transform.position.x;
+        sr.flipX =  PlayerController.Instance.transform.position.x > transform.position.x;
     }
 
     public override void EnemyHit(float _damage, Vector2 _hitDirection, float _hitForce)

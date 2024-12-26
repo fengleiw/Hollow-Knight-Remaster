@@ -35,7 +35,16 @@ public class EnemyController : MonoBehaviour
         //Zomebie basic
         ZB_Idle,
         ZB_Suprised,
-        ZB_Charge
+        ZB_Charge,
+
+        
+        //Shade
+        Shade_Idle,
+        Shade_Chase,
+        Shade_Stunned,
+        Shade_Death
+
+
     }
     protected virtual EnemyStates GetCurrentEnemyState
     {
@@ -56,7 +65,7 @@ public class EnemyController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
-        player = PlayerController.instance;
+        player = PlayerController.Instance;
 
     }
 
@@ -108,12 +117,12 @@ public class EnemyController : MonoBehaviour
 
     protected void OnCollisionStay2D(Collision2D _other)
     {
-        if (_other.gameObject.CompareTag("Player") && !PlayerController.instance.pState.invincible && health > 0)
+        if (_other.gameObject.CompareTag("Player") && !PlayerController.Instance.pState.invincible && health > 0)
         {
             Attack();
-            if (PlayerController.instance.pState.alive)
+            if (PlayerController.Instance.pState.alive)
             {
-                PlayerController.instance.HitStopTime(0, 5, 0.5f);
+                PlayerController.Instance.HitStopTime(0, 5, 0.5f);
             }
             
         }
@@ -126,7 +135,7 @@ public class EnemyController : MonoBehaviour
 
     protected virtual void Attack()
     {
-        PlayerController.instance.TakeDamage(damage);
+        PlayerController.Instance.TakeDamage(damage);
     }
 
 }

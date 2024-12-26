@@ -24,7 +24,7 @@ public class ZombieBasic : EnemyController
     protected override void Update()
     {
         base.Update();
-        if (!PlayerController.instance.pState.alive)
+        if (!PlayerController.Instance.pState.alive)
         {
             ChangeState(EnemyStates.ZB_Idle);
         }

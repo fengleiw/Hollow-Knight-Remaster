@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,43 +11,71 @@ public class GameManager : MonoBehaviour
 
     public Vector2 respawnPoint;
     [SerializeField] Bench bench;
+
+    public GameObject shade;
     public static GameManager Instance { get; private set; }
 
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            SaveData.Instance.SavePlayerData();
+        }
+        Debug.Log("Save:" + SaveData.Instance.playerPosition);
+        //Debug.Log("Now" + PlayerController.Instance.transform.position);
+        //SaveData.Instance.LoadPlayerData();
+        
+    }
+
     private void Awake()
     {
-        if(Instance != null && Instance != this)
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
-        } else
+        }
+        else
         {
             Instance = this;
         }
+
+        
         DontDestroyOnLoad(gameObject);
         bench = FindObjectOfType<Bench>();
     }
 
+    //private void Start()
+    //{
+    //    SaveData.Instance.LoadPlayerData();
+    //}
+
+
+
     public void RespawnPlayer()
     {
-        if(bench != null)
+        SaveData.Instance.LoadBench();
+        if(SaveData.Instance.benchSceneName != null)
         {
-            if (bench.interacted)
-            {
-                respawnPoint = bench.transform.position;
-            }
-            else
-            {
-                respawnPoint = platformingReSpawnPoint;
-            }
+            SceneManager.LoadScene(SaveData.Instance.benchSceneName);
+        }
+        if(SaveData.Instance.benchPos != null)
+        {
+            respawnPoint = SaveData.Instance.benchPos;
         }
         else
         {
             respawnPoint = platformingReSpawnPoint;
         }
 
-        PlayerController.instance.transform.position = respawnPoint;
+        PlayerController.Instance.transform.position = respawnPoint;
         StartCoroutine(UIManager.Instance.DeActivateDeathScreen());
-        PlayerController.instance.Respawned();
+        PlayerController.Instance.Respawned();
     }
- 
+
+    //public void SaveScene()
+    //{
+    //    string currentSceneName = SceneManager.GetActiveScene().name;
+    //    SaveData.Instance.sceneNames.Add(currentSceneName);
+    //}
+
 }

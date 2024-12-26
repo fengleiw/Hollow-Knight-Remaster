@@ -16,10 +16,10 @@ public class SceneTransition : MonoBehaviour
     {
         
 
-        if (transitionTo == GameManager.Instance.transitionedFromScene)
+        if (GameManager.Instance.transitionedFromScene == transitionTo)
         {
-            PlayerController.instance.transform.position = startPoint.position;
-            StartCoroutine(PlayerController.instance.WalkIntoNewScene(exitDirection, exitTime));
+            PlayerController.Instance.transform.position = startPoint.position; //
+            StartCoroutine(PlayerController.Instance.WalkIntoNewScene(exitDirection, exitTime));
         }
         StartCoroutine(UIManager.Instance.sceneFader.Fade(SceneFader.FadeDirection.Out));
     }
@@ -33,11 +33,22 @@ public class SceneTransition : MonoBehaviour
         if (_collision.CompareTag("Player"))
         {
             GameManager.Instance.transitionedFromScene = SceneManager.GetActiveScene().name;
-            PlayerController.instance.pState.cutScene = true;
+            PlayerController.Instance.pState.cutScene = true;
             //PlayerController.instance.pState.invincible = true;
             StartCoroutine(UIManager.Instance.sceneFader.FadeAndLoadScene(SceneFader.FadeDirection.In, transitionTo));
             //SceneManager.LoadScene(transitionTo);
         }
     }
 
+    void CheckShadeData()
+    {
+        GameObject[] enemyObjects = GameObject.FindGameObjectsWithTag("Enemy");
+        for (int i = 0; i < enemyObjects.Length; i++)
+        {
+            if (enemyObjects[i].GetComponent<Shade>() != null)
+            {
+                SaveData.Instance.SaveShadeData();
+            }
+        }
+    }
 }

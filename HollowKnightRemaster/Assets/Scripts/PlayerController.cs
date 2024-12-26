@@ -85,6 +85,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float mana;
     [SerializeField] float manaDrainSpeed;
     [SerializeField] float manaGain;
+    public bool breakMana;
 
     [Space(5)]
 
@@ -120,20 +121,20 @@ public class PlayerController : MonoBehaviour
     [HideInInspector] public PlayerStateList pState;
     public Rigidbody2D rb;
 
-    public static PlayerController instance;
+    public static PlayerController Instance;
 
     bool restoreTime;
     float restoreTimeSpeed;
 
     private void Awake()
     {
-        if (instance != null && instance != this)
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
         }
         else
         {
-            instance = this;
+            Instance = this;
         }
         DontDestroyOnLoad(gameObject);
     }
@@ -141,15 +142,22 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
         anim = GetComponent<Animator>();
+
         pState = GetComponent<PlayerStateList>();
+
         sr = GetComponent<SpriteRenderer>();
-        //jumpLeft = maxJump;
+
+
+
         gravity = rb.gravityScale;
         Health = maxHealth;
         Mana = mana;
         manaStorage.fillAmount = Mana;
-        //fix wrong side spell
+
+        SaveData.Instance.LoadPlayerData();
+
         pState.lookingLeft = true;
         pState.alive = true;
     }
@@ -177,6 +185,10 @@ public class PlayerController : MonoBehaviour
             Heal();
             CastSpell();
         }
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            StartCoroutine(Death());
+        }
 
 
         FlashWhileInvincible();
@@ -197,6 +209,7 @@ public class PlayerController : MonoBehaviour
         var horizontalInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(horizontalInput * speed, rb.velocity.y);
         anim.SetBool("isRunning", rb.velocity.x != 0 && IsGrounded());
+       
     }
 
 
@@ -279,7 +292,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    float Mana
+    public float Mana
     {
         get
         {
@@ -289,7 +302,15 @@ public class PlayerController : MonoBehaviour
         {
             if (mana != value)
             {
-                mana = Mathf.Clamp(value, 0, 1);
+                if (!breakMana)
+                {
+                    mana = Mathf.Clamp(value, 0, 1);
+
+                }
+                else
+                {
+                    mana = Mathf.Clamp(value, 0, 1); //0.5f);
+                }
                 manaStorage.fillAmount = Mana;
             }
         }
@@ -592,7 +613,7 @@ public class PlayerController : MonoBehaviour
             {
                 Health = 0;
                 StartCoroutine(Death());
-                
+
             }
             else
             {
@@ -713,6 +734,9 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(0.9f);
 
         StartCoroutine(UIManager.Instance.ActivateDeathScreen());
+
+        yield return new WaitForSeconds(0.9f);
+        Instantiate(GameManager.Instance.shade, transform.position, Quaternion.identity);
     }
 
     public void Respawned()
@@ -720,6 +744,9 @@ public class PlayerController : MonoBehaviour
         if (!pState.alive)
         {
             pState.alive = true;
+            breakMana = true;
+            UIManager.Instance.SwitchMana(UIManager.ManaState.BreakMana);
+            Mana = 0f;
             Health = maxHealth;
             anim.Play("idle");
         }
