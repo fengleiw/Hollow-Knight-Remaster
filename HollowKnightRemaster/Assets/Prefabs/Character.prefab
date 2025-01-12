@@ -288,6 +288,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 366397364557955512}
+  - {fileID: 6147795736207795253}
   - {fileID: 1051212011906639786}
   - {fileID: 2015589313953155055}
   - {fileID: 6369583678117844295}
@@ -397,6 +398,7 @@ MonoBehaviour:
   dashTime: 0.2
   dashCooldown: 0.3
   dashEffect: {fileID: 4988909562643184989, guid: 3209a28bebdabee4b94584943c29bd00, type: 3}
+  timeBetweenAttack: 0
   SideAttackTransform: {fileID: 1051212011906639786}
   UpAttackTransform: {fileID: 2015589313953155055}
   DownAttackTransform: {fileID: 6369583678117844295}
@@ -422,6 +424,7 @@ MonoBehaviour:
   mana: 1
   manaDrainSpeed: 0.2
   manaGain: 0.3
+  breakMana: 0
   manaSpellCost: 0
   timeBetweenCast: 0.5
   spellDamage: 10000
@@ -429,7 +432,15 @@ MonoBehaviour:
   sideSpellFireBall: {fileID: 1037116326284645799, guid: af7108c091a1a6041a22bcc35e4e58ff, type: 3}
   upSpellBloom: {fileID: 3111381295381412854, guid: 52ee7aca50455014d83fa987af18fb26, type: 3}
   downSpellFireBall: {fileID: 2018143056862378723}
+  wallSlidingSpeed: 2
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  wallCheck: {fileID: 6147795736207795253}
+  wallJumpingDuration: 0
+  wallJumpingPower: {x: 0, y: 0}
   pState: {fileID: 0}
+  rb: {fileID: 0}
 --- !u!50 &7052286583874370150
 Rigidbody2D:
   serializedVersion: 4
@@ -514,6 +525,38 @@ MonoBehaviour:
   casting: 0
   cutScene: 0
   falling: 0
+  alive: 0
+--- !u!1 &4533352118730169065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6147795736207795253}
+  m_Layer: 0
+  m_Name: Wall Check
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6147795736207795253
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4533352118730169065}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.525, y: -0.431, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4046258105728684519}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5084078667868134574
 GameObject:
   m_ObjectHideFlags: 0

@@ -42,7 +42,11 @@ public class EnemyController : MonoBehaviour
         Shade_Idle,
         Shade_Chase,
         Shade_Stunned,
-        Shade_Death
+        Shade_Death,
+
+        //Worm
+        Worm_Appear,
+        Worm_Charger
 
 
     }

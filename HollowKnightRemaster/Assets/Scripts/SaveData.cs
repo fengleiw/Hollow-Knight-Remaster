@@ -27,12 +27,17 @@ public struct SaveData
     public Vector2 playerPosition;
     public string lastScene;
 
+    public bool playerUnlockWallJump,playerUnlockDash, playerUnlockVarJump;
+    public bool playerUnlockSideCast, playerUnlockUpCast, playerUnlockDownCast;
+
+
     //Enemies stuff
     //Shade
     public Vector2 shadePos;
     public string sceneWithShade;
     public Quaternion shadeRot;
 
+    
     public void Initialize()
     {
         //For map
@@ -93,6 +98,20 @@ public struct SaveData
             playerBreakMana = PlayerController.Instance.breakMana;           
             writer.Write(playerBreakMana);
 
+            playerUnlockWallJump = PlayerController.Instance.unlockWallJump;
+            writer.Write(playerUnlockWallJump);
+            playerUnlockDash = PlayerController.Instance.unlockDash;
+            writer.Write(playerUnlockDash);
+            playerUnlockVarJump = PlayerController.Instance.unlockVarJump;
+            writer.Write(playerUnlockVarJump);
+
+            playerUnlockSideCast = PlayerController.Instance.unlockSideCast;
+            writer.Write(playerUnlockSideCast);
+            playerUnlockUpCast = PlayerController.Instance.unlockUpCast;
+            writer.Write(playerUnlockUpCast);
+            playerUnlockDownCast = PlayerController.Instance.unlockDownCast;
+            writer.Write(playerUnlockDownCast);
+
             playerPosition = PlayerController.Instance.transform.position;
             writer.Write(playerPosition.x);
             writer.Write(playerPosition.y);
@@ -102,6 +121,7 @@ public struct SaveData
             
         }
     }
+    
 
     public void LoadPlayerData() //
     {
@@ -109,16 +129,26 @@ public struct SaveData
         {
             using (BinaryReader reader = new BinaryReader(File.OpenRead(Application.persistentDataPath + "/save.player.data")))
             {
-                //Debug.Log("Player's data loading");
+                Debug.Log("Player's data loading");
                 playerHealth = reader.ReadInt32();
                 playerMana = reader.ReadSingle();
                 playerBreakMana = reader.ReadBoolean();
+
+                playerUnlockWallJump = reader.ReadBoolean();
+                playerUnlockDash= reader.ReadBoolean();
+                playerUnlockVarJump= reader.ReadBoolean();
+
+                playerUnlockSideCast = reader.ReadBoolean();
+                playerUnlockUpCast = reader.ReadBoolean();
+                playerUnlockDownCast = reader.ReadBoolean();
+
                 playerPosition.x = reader.ReadSingle();
-               // Debug.Log(playerPosition.x);
+                Debug.Log(playerPosition.x);
                 playerPosition.y = reader.ReadSingle();
-                //Debug.Log(playerPosition.y);
+                Debug.Log(playerPosition.y);
                 lastScene = reader.ReadString();
 
+                
 
                 SceneManager.LoadScene(lastScene);
                 PlayerController.Instance.transform.position = playerPosition;
@@ -127,14 +157,26 @@ public struct SaveData
                 PlayerController.Instance.Health = playerHealth;
                 PlayerController.Instance.Mana = playerMana;
                 PlayerController.Instance.breakMana = playerBreakMana;
-               // Debug.Log("Player's data loading");
+                Debug.Log("Player's data loading");
+
+                PlayerController.Instance.unlockWallJump = playerUnlockWallJump;
+                PlayerController.Instance.unlockDash = playerUnlockDash;
+                PlayerController.Instance.unlockVarJump = playerUnlockVarJump;
+
+                PlayerController.Instance.unlockSideCast = playerUnlockSideCast;
+                PlayerController.Instance.unlockUpCast = playerUnlockUpCast;
+                PlayerController.Instance.unlockDownCast = playerUnlockDownCast;
             }
         }
         else
         {
-            Debug.Log("File doesn't exist");
+            //Debug.Log("File doesn't exist");
+            PlayerController.Instance.breakMana = false;
             PlayerController.Instance.Health = PlayerController.Instance.maxHealth;
             PlayerController.Instance.Mana = 0.5f;
+            PlayerController.Instance.unlockWallJump = false;
+            PlayerController.Instance.unlockDash = false;
+            PlayerController.Instance.unlockVarJump = false;
         }
     }
 

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Death
+  - Moss
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - UI
   - Ground
   - Attackable
-  - 
+  - Detec zone
   - 
   - 
   - 

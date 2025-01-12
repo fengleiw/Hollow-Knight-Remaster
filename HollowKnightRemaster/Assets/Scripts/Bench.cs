@@ -13,21 +13,19 @@ public class Bench : MonoBehaviour
         if (_collision.CompareTag("Player") && Input.GetButtonDown("Interact"))
         {
             interacted = true;
-
-
-
             SaveData.Instance.benchSceneName = SceneManager.GetActiveScene().name;
             SaveData.Instance.benchPos = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y);
             SaveData.Instance.SaveBench();
             SaveData.Instance.SavePlayerData();
+            Debug.Log(Application.persistentDataPath);
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D _collision)
-    {
-        if (_collision.CompareTag("Player"))
-        {
-            interacted = false;
-        }
-    }
+    //private void OnTriggerEnter2D(Collider2D _collision)
+    //{
+    //    if (_collision.CompareTag("Player"))
+    //    {
+    //        interacted = false;
+    //    }
+    //}
 }

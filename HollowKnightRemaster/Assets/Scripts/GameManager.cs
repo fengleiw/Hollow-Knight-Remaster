@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
         {
             SaveData.Instance.SavePlayerData();
         }
-        Debug.Log("Save:" + SaveData.Instance.playerPosition);
+        //Debug.Log("Save:" + SaveData.Instance.playerPosition);
         //Debug.Log("Now" + PlayerController.Instance.transform.position);
         //SaveData.Instance.LoadPlayerData();
         

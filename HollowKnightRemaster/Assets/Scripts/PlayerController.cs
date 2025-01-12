@@ -7,6 +7,7 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
@@ -32,8 +33,17 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float groundCheckY = 0.2f;
     [SerializeField] private float groundCheckX = 0.5f;
     [SerializeField] private LayerMask collisionMask;
+    [Space(5)]
 
-
+    [Header("Wall Jump")]
+    [SerializeField] private float wallSlidingSpeed = 2f;
+    [SerializeField] private LayerMask wallLayer;
+    [SerializeField] private Transform wallCheck;
+    [SerializeField] private float wallJumpingDuration;
+    [SerializeField] private Vector2 wallJumpingPower;
+    float wallJumpingDirection;
+    bool isWallSliding;
+    bool isWallJumping;
     [Space(5)]
 
     [Header("Dash Setting")]
@@ -101,16 +111,7 @@ public class PlayerController : MonoBehaviour
     float castOrHealTimer;
     [Space(5)]
 
-    //[Header("Wall Jump")]
-    //[SerializeField] private float wallSlidingSpeed = 2f;
-    //[SerializeField] private LayerMask wallLayer;
-    //[SerializeField] private Transform wallCheck;
-    //[SerializeField] private float wallJumpingDuration;
-    //[SerializeField] private Vector2 wallJumpingPower;
-    //float wallJumpingDirection;
-    //bool isWallSliding;
-    //bool isWallJumping;
-    //[Space(5)]
+
 
 
 
@@ -125,6 +126,15 @@ public class PlayerController : MonoBehaviour
 
     bool restoreTime;
     float restoreTimeSpeed;
+
+    //Unlocking
+    public bool unlockWallJump;
+    public bool unlockDash;
+    public bool unlockVarJump;
+    public bool unlockSideCast;
+    public bool unlockUpCast;
+    public bool unlockDownCast;
+
 
     private void Awake()
     {
@@ -158,12 +168,16 @@ public class PlayerController : MonoBehaviour
 
         SaveData.Instance.LoadPlayerData();
 
-        pState.lookingLeft = true;
+        pState.lookingRight = true;
         pState.alive = true;
     }
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            SaveData.Instance.SavePlayerData();
+        }
         //Debug.Log(pState.alive);
         if (pState.cutScene) return;
         if (pState.alive)
@@ -177,12 +191,28 @@ public class PlayerController : MonoBehaviour
         if (pState.dashing /* + healing*/) return;
         if (pState.alive)
         {
-            Movement();
-            Jump();
-            Flip();
-            StartDash();
-            Attack();
             Heal();
+        }
+        if (pState.alive)
+        {
+            if (!isWallJumping)
+            {
+                Movement();
+                Jump();
+                Flip();
+            }
+            if (unlockWallJump)
+            {
+                WallSlide();
+                WallJump();
+            }
+
+            if (unlockDash)
+            {
+                StartDash();
+            }
+            
+            Attack();          
             CastSpell();
         }
         if (Input.GetKeyDown(KeyCode.L))
@@ -209,7 +239,7 @@ public class PlayerController : MonoBehaviour
         var horizontalInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(horizontalInput * speed, rb.velocity.y);
         anim.SetBool("isRunning", rb.velocity.x != 0 && IsGrounded());
-       
+
     }
 
 
@@ -323,7 +353,7 @@ public class PlayerController : MonoBehaviour
 
         anim.SetTrigger("Dashing");
         rb.gravityScale = 0;
-        int _dir = pState.lookingLeft ? 1 : -1;
+        int _dir = pState.lookingRight ? 1 : -1;
         rb.velocity = new Vector2(-_dir * dashSpeed, 0);
         /*if (IsGrounded())*/
         //Instantiate(dashEffect, transform);
@@ -352,15 +382,15 @@ public class PlayerController : MonoBehaviour
     }
     private void Flip()
     {
-        if (xAxis > 0)
+        if (xAxis < 0)
         {
-            transform.localScale = new Vector2(-1, transform.localScale.y);
-            pState.lookingLeft = false;
+            transform.eulerAngles = new Vector2(0, 180);
+            pState.lookingRight = false;
         }
-        else if (xAxis < 0)
+        else if (xAxis > 0)
         {
-            transform.localScale = new Vector2(1, transform.localScale.y);
-            pState.lookingLeft = true;
+            transform.eulerAngles = new Vector2(0, 0);
+            pState.lookingRight = true;
         }
     }
 
@@ -402,7 +432,7 @@ public class PlayerController : MonoBehaviour
             pState.jumping = true;
         }
         //Double jump
-        if (!IsGrounded() && airJumpCounter < maxAirJumps && Input.GetButtonDown("Jump"))
+        if (!IsGrounded() && airJumpCounter < maxAirJumps && Input.GetButtonDown("Jump") && unlockVarJump)
         {
             pState.jumping = true;
             airJumpCounter++;
@@ -472,7 +502,7 @@ public class PlayerController : MonoBehaviour
 
             if (yAxis == 0 || yAxis < 0 && IsGrounded())
             {
-                int _recoilLeftOrRight = pState.lookingLeft ? 1 : -1;
+                int _recoilLeftOrRight = pState.lookingRight ? 1 : -1;
 
                 anim.SetTrigger("Attacking");
                 Instantiate(slashEffect, SideAttackTransform);
@@ -540,13 +570,13 @@ public class PlayerController : MonoBehaviour
     {
         if (pState.recoilingX)
         {
-            if (pState.lookingLeft)
+            if (pState.lookingRight)
             {
-                rb.velocity = new Vector2(recoilXSpeed, 0);
+                rb.velocity = new Vector2(-recoilXSpeed, 0);
             }
             else
             {
-                rb.velocity = new Vector2(-recoilXSpeed, 0);
+                rb.velocity = new Vector2(recoilXSpeed, 0);
             }
         }
 
@@ -658,16 +688,18 @@ public class PlayerController : MonoBehaviour
     }
     IEnumerator CastCoroutine()
     {
-        anim.SetBool("Casting", true);
-        yield return new WaitForSeconds(0.25f /*Casting Time, need fixed*/);
+        
 
         //Side Spell
-        if (yAxis == 0 || (yAxis < 0 & IsGrounded()))
+        if ((yAxis == 0 || (yAxis < 0 & IsGrounded())) && unlockSideCast)
         {
+            anim.SetBool("Casting", true);
+            yield return new WaitForSeconds(0.25f /*Casting Time, need fixed*/);
+
             GameObject _fireBall = Instantiate(sideSpellFireBall, SideAttackTransform.position, Quaternion.identity);
 
             //Flip spell
-            if (!pState.lookingLeft)
+            if (pState.lookingRight)
             {
                 _fireBall.transform.eulerAngles = Vector3.zero;
             }
@@ -676,23 +708,37 @@ public class PlayerController : MonoBehaviour
                 _fireBall.transform.eulerAngles = new Vector2(_fireBall.transform.eulerAngles.x, 180);
             }
             pState.recoilingX = true;
+
+            Mana -= manaSpellCost;
+            yield return new WaitForSeconds(0.35f);
         }
 
         //Up spell
-        else if (yAxis > 0)
+        else if (yAxis > 0 && unlockUpCast)
         {
+            anim.SetBool("Casting", true);
+            yield return new WaitForSeconds(0.25f /*Casting Time, need fixed*/);
+
             Instantiate(upSpellBloom, transform);
             rb.velocity = Vector2.zero;
+
+            Mana -= manaSpellCost;
+            yield return new WaitForSeconds(0.35f);
         }
 
         //Down Spell
-        else if (yAxis < 0 && !IsGrounded())
+        else if ((yAxis < 0 && !IsGrounded()) && unlockDownCast)
         {
+            anim.SetBool("Casting", true);
+            yield return new WaitForSeconds(0.25f /*Casting Time, need fixed*/);
+
             downSpellFireBall.SetActive(true);
+
+            Mana -= manaSpellCost;
+            yield return new WaitForSeconds(0.35f);
         }
 
-        Mana -= manaSpellCost;
-        yield return new WaitForSeconds(0.35f);
+        
         anim.SetBool("Casting", false);
         pState.casting = false;
     }
@@ -751,57 +797,56 @@ public class PlayerController : MonoBehaviour
             anim.Play("idle");
         }
     }
-    /* private bool Walled()
-     {
-         return Physics2D.OverlapCircle(wallCheck.position, 0.2f, wallLayer);
-     }*/
+    private bool Walled()
+    {
+        return Physics2D.OverlapCircle(wallCheck.position, 0.4f, wallLayer);
+    }
 
-    /* private void WallSlide()
-     {
-         if (Walled() && !IsGrounded() && xAxis != 0)
-         {
-             isWallSliding = true;
-             rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
-         }
-         else
-         {
-             isWallSliding = false;
-         }
-     }
+    private void WallSlide()
+    {
+        if (Walled() && !IsGrounded() && xAxis != 0) //
+        {
+            isWallSliding = true;
+            //Debug.Log(Physics2D.OverlapCircle(wallCheck.position, 0.4f, wallLayer));
+            rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
+        }
+        else
+        {
+            isWallSliding = false;
+        }
+    }
 
-     void WallJump()
-     {
-         if (isWallSliding)
-         {
-             isWallJumping = false;
-             wallJumpingDirection = pState.lookingLeft ? 1 : -1;
+    void WallJump()
+    {
+        if (isWallSliding)
+        {
+            isWallJumping = false;
+            wallJumpingDirection = pState.lookingRight ? 1 : -1;
 
-             CancelInvoke(nameof(StopWallJumping));
-         }
+            CancelInvoke(nameof(StopWallJumping));
+        }
 
-         if (Input.GetButtonDown("Jump") && isWallSliding)
-         {
-             isWallJumping = true;
-             rb.velocity = new Vector2(wallJumpingDirection * wallJumpingPower.x, wallJumpingPower.y);
+        if (Input.GetButtonDown("Jump") && isWallSliding)
+        {
+            isWallJumping = true;
+            rb.velocity = new Vector2(wallJumpingDirection * wallJumpingPower.x, wallJumpingPower.y);
 
-             dashed = false;
-             maxJump = 1; //Check again
+            dashed = false;
+            airJumpCounter = 0; //Become double jump?
 
-             if ((pState.lookingLeft && transform.eulerAngles.y == 0 || !pState.lookingLeft) && transform.eulerAngles.y != 0)
-             {
-                 pState.lookingLeft = !pState.lookingLeft;
-                 int _yRotation = pState.lookingLeft ? 0 : 180;
+            if ((pState.lookingRight && transform.eulerAngles.y == 0) || (!pState.lookingRight && transform.eulerAngles.y != 0))
+            {
+                pState.lookingRight = !pState.lookingRight;
+                int _yRotation = pState.lookingRight ? 0 : 180;
 
-                 transform.eulerAngles = new Vector2(transform.eulerAngles.x, _yRotation);
-             }
+                transform.eulerAngles = new Vector2(transform.eulerAngles.x, _yRotation);
+            }
 
-             Invoke(nameof(StopWallJumping), wallJumpingDuration);
-         }
-
-     }
-     void StopWallJumping()
-     {
-         isWallJumping = false;
-     }
-    */
+            Invoke(nameof(StopWallJumping), wallJumpingDuration);
+        }
+    }
+    void StopWallJumping()
+    {
+        isWallJumping = false;
+    }
 }
