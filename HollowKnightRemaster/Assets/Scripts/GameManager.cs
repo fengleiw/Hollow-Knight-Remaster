@@ -15,19 +15,25 @@ public class GameManager : MonoBehaviour
     public GameObject shade;
     public static GameManager Instance { get; private set; }
 
+    [SerializeField] private FadeUI pauseMenu;
+    [SerializeField] private float fadeTime;
 
+    public bool gameIsPaused;
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+       if(Input.GetKeyDown(KeyCode.Escape) && !gameIsPaused)
         {
-            SaveData.Instance.SavePlayerData();
-        }
-        //Debug.Log("Save:" + SaveData.Instance.playerPosition);
-        //Debug.Log("Now" + PlayerController.Instance.transform.position);
-        //SaveData.Instance.LoadPlayerData();
-        
-    }
+            pauseMenu.FadeUIIn(fadeTime);
+            Time.timeScale = 0;
+            gameIsPaused = true;
 
+        }
+    }
+   public void UnPauseGame()
+    {
+        Time.timeScale = 1;
+        gameIsPaused = false;
+    }
     private void Awake()
     {
         if (Instance != null && Instance != this)

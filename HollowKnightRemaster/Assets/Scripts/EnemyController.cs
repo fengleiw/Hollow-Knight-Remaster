@@ -46,7 +46,17 @@ public class EnemyController : MonoBehaviour
 
         //Worm
         Worm_Appear,
-        Worm_Charger
+        Worm_Charger,
+
+        //MossCrawler
+        MossCrawler_Idle,
+        MossCrawler_Appear,
+        MossCrawler_Flip,
+        MossCrawler_Run,
+
+        //Climber
+        Climber_Idle,
+        Climber_Flip
 
 
     }
@@ -77,7 +87,7 @@ public class EnemyController : MonoBehaviour
     protected virtual void Update()
     {
 
-
+        if (GameManager.Instance.gameIsPaused) return;
         if (isRecoiling)
         {
             if (recoilTimer < recoilLength)

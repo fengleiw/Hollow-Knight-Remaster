@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 7052286583874370150}
   - component: {fileID: 1989682292190032496}
   - component: {fileID: 6241003381922019773}
+  - component: {fileID: 8885377868370595849}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -394,6 +395,13 @@ MonoBehaviour:
   collisionMask:
     serializedVersion: 2
     m_Bits: 64
+  wallSlidingSpeed: 2
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  wallCheck: {fileID: 6147795736207795253}
+  wallJumpingDuration: 0
+  wallJumpingPower: {x: 0, y: 0}
   dashSpeed: 25
   dashTime: 0.2
   dashCooldown: 0.3
@@ -432,15 +440,23 @@ MonoBehaviour:
   sideSpellFireBall: {fileID: 1037116326284645799, guid: af7108c091a1a6041a22bcc35e4e58ff, type: 3}
   upSpellBloom: {fileID: 3111381295381412854, guid: 52ee7aca50455014d83fa987af18fb26, type: 3}
   downSpellFireBall: {fileID: 2018143056862378723}
-  wallSlidingSpeed: 2
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  wallCheck: {fileID: 6147795736207795253}
-  wallJumpingDuration: 0
-  wallJumpingPower: {x: 0, y: 0}
+  landingSound: {fileID: 8300000, guid: 8f6e4799d1d4c1f449eedc945dc16170, type: 3}
+  jumpSound: {fileID: 0}
+  dashSound: {fileID: 8300000, guid: 9426b938ae57c524b9ad404e0de191b3, type: 3}
+  attackSound: {fileID: 8300000, guid: f98c160ba98c8ca4cbb093c888738e27, type: 3}
+  spellCastSound: {fileID: 8300000, guid: 88caa98a5ede1f44188f5ee5f340cb93, type: 3}
+  hurtSound: {fileID: 8300000, guid: 43dd698f97a9a84409db9a5715b1bb72, type: 3}
+  xAxis: 0
+  yAxis: 0
+  anim: {fileID: 0}
   pState: {fileID: 0}
   rb: {fileID: 0}
+  unlockWallJump: 0
+  unlockDash: 0
+  unlockVarJump: 0
+  unlockSideCast: 0
+  unlockUpCast: 0
+  unlockDownCast: 0
 --- !u!50 &7052286583874370150
 Rigidbody2D:
   serializedVersion: 4
@@ -519,13 +535,109 @@ MonoBehaviour:
   dashing: 0
   recoilingX: 0
   recoilingY: 0
-  lookingLeft: 0
+  lookingRight: 1
   invincible: 0
   healing: 0
   casting: 0
   cutScene: 0
   falling: 0
   alive: 0
+--- !u!82 &8885377868370595849
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2561052518795806566}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &4533352118730169065
 GameObject:
   m_ObjectHideFlags: 0

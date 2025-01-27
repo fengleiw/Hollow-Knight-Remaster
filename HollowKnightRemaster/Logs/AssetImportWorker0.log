@@ -1,0 +1,1029 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.27f1 (73effa14754f) revision 7598074'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit CoreSingleLanguage' Language: 'en' Physical Memory: 15724 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.27f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Remaster/Hollow-Knight-Remaster/HollowKnightRemaster
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50500
+Successfully changed project path to: D:/Remaster/Hollow-Knight-Remaster/HollowKnightRemaster
+D:/Remaster/Hollow-Knight-Remaster/HollowKnightRemaster
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [18552] Host "[IP] 192.168.2.194 [Port] 0 [Flags] 2 [Guid] 1285743068 [EditorId] 1285743068 [Version] 1048832 [Id] WindowsEditor(7,LeiFeng) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [18552] Host "[IP] 192.168.2.194 [Port] 0 [Flags] 2 [Guid] 1285743068 [EditorId] 1285743068 [Version] 1048832 [Id] WindowsEditor(7,LeiFeng) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 13.21 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.27f1 (73effa14754f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.27f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Remaster/Hollow-Knight-Remaster/HollowKnightRemaster/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f9d)
+    Vendor:   NVIDIA
+    VRAM:     3937 MB
+    Driver:   32.0.15.6636
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.27f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.27f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56784
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.27f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.27f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.011093 seconds.
+- Loaded All Assemblies, in  0.377 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.253 seconds
+Domain Reload Profiling: 628ms
+	BeginReloadAssembly (120ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (70ms)
+	LoadAllAssembliesAndSetupDomain (140ms)
+		LoadAssemblies (117ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (138ms)
+			TypeCache.Refresh (136ms)
+				TypeCache.ScanAssembly (123ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (253ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (196ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (136ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.700 seconds
+Refreshing native plugins compatible for Editor in 5.47 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.822 seconds
+Domain Reload Profiling: 1520ms
+	BeginReloadAssembly (140ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (477ms)
+		LoadAssemblies (337ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (220ms)
+			TypeCache.Refresh (186ms)
+				TypeCache.ScanAssembly (167ms)
+			ScanForSourceGeneratedMonoScriptInfo (24ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (822ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (662ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (100ms)
+			ProcessInitializeOnLoadAttributes (463ms)
+			ProcessInitializeOnLoadMethodAttributes (76ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 4.97 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6038 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 97 unused Assets / (0.8 MB). Loaded Objects now: 6501.
+Memory consumption went from 233.3 MB to 232.5 MB.
+Total: 5.287700 ms (FindLiveObjects: 0.461400 ms CreateObjectMapping: 0.439700 ms MarkObjects: 3.970500 ms  DeleteObjects: 0.414600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1501.166297 seconds.
+  path: Assets/Prefabs/Unlockl Player Skill/unlockl.anim
+  artifactKey: Guid(fd9c878065376ed4d86faef479f0cac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Unlockl Player Skill/unlockl.anim using Guid(fd9c878065376ed4d86faef479f0cac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0020a66f3f550849b7b0bfc6520fc374') in 0.010850 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 30.878513 seconds.
+  path: Assets/unlockabilities.anim
+  artifactKey: Guid(ce0446e3a94eeec468378ffc181a223e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unlockabilities.anim using Guid(ce0446e3a94eeec468378ffc181a223e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9912748d2fab41c60fa8c34c2f8e027d') in 0.001065 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 2.291241 seconds.
+  path: Assets/unlockabilities1.anim
+  artifactKey: Guid(d29db8289c3a813409a55360fad92f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unlockabilities1.anim using Guid(d29db8289c3a813409a55360fad92f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a260f873bc55de816e247df68cc22a6b') in 0.001063 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.451450 seconds.
+  path: Assets/unlockabilities2.anim
+  artifactKey: Guid(5ae398a93ffe3764199c58f314cb51a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unlockabilities2.anim using Guid(5ae398a93ffe3764199c58f314cb51a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9659a9c3e2bb5ee81f840ddf4f273955') in 0.001034 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 36.193736 seconds.
+  path: Assets/UnlockDash.controller
+  artifactKey: Guid(1da4afde65ce66344bbeb8315cf26301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnlockDash.controller using Guid(1da4afde65ce66344bbeb8315cf26301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4338e25b375437749b6ce7ba645c39dc') in 0.001617 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 2.803089 seconds.
+  path: Assets/unlockabilities4.anim
+  artifactKey: Guid(a42ddee494265b447a01073a4d75b79a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unlockabilities4.anim using Guid(a42ddee494265b447a01073a4d75b79a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5791345dcb223195e30dd9d5f6b52226') in 0.001116 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 7.631496 seconds.
+  path: Assets/unlockabilities3.anim
+  artifactKey: Guid(727491c253672484aad2f75d1a5fded7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unlockabilities3.anim using Guid(727491c253672484aad2f75d1a5fded7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54f1732027cbf1b2a8c6f5f0d295020d') in 0.001099 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 32.990896 seconds.
+  path: Assets/Prefabs/Unlockl Player Skill/UnlockDash 1.prefab
+  artifactKey: Guid(87aa65d7f4f3bc548842fc0e99454cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Unlockl Player Skill/UnlockDash 1.prefab using Guid(87aa65d7f4f3bc548842fc0e99454cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (UnlockDash) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\build\output\unity\unity\Modules\Animation\Director\AnimatorControllerPlayable.cpp line 333]
+
+ -> (artifact id: '5f43f41c728c97766d54bb18f76ea7fb') in 0.107830 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 48
+========================================================================
+Received Import Request.
+  Time since last request: 288.729156 seconds.
+  path: Assets/Prefabs/Unlockl Player Skill/UnlockDash.prefab
+  artifactKey: Guid(3350b1fdb1e85eb4195ff2ef35869129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Unlockl Player Skill/UnlockDash.prefab using Guid(3350b1fdb1e85eb4195ff2ef35869129) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (UnlockDash) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\build\output\unity\unity\Modules\Animation\Director\AnimatorControllerPlayable.cpp line 333]
+
+ -> (artifact id: '031d67976742d19bf5ff4f932a8e7ca9') in 0.027314 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 46
+========================================================================
+Received Import Request.
+  Time since last request: 1.240748 seconds.
+  path: Assets/Prefabs/Unlockl Player Skill/UnlockUpCast.prefab
+  artifactKey: Guid(74ff8ddf295d9934281f364e60af4b7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Unlockl Player Skill/UnlockUpCast.prefab using Guid(74ff8ddf295d9934281f364e60af4b7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (UnlockDash) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\build\output\unity\unity\Modules\Animation\Director\AnimatorControllerPlayable.cpp line 333]
+
+ -> (artifact id: 'f3f8bd5bf5c6becf556da0d99b7babeb') in 0.019925 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 46
+========================================================================
+Received Import Request.
+  Time since last request: 0.982868 seconds.
+  path: Assets/Prefabs/Unlockl Player Skill/UnlockSideCast.prefab
+  artifactKey: Guid(a8b476d13e1dd7647a04a338f4eb74cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Unlockl Player Skill/UnlockSideCast.prefab using Guid(a8b476d13e1dd7647a04a338f4eb74cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (UnlockDash) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\build\output\unity\unity\Modules\Animation\Director\AnimatorControllerPlayable.cpp line 333]
+
+ -> (artifact id: '6b286e9ecd691ba4a06deba39ebf63e5') in 0.019425 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 46
+========================================================================
+Received Import Request.
+  Time since last request: 1.042548 seconds.
+  path: Assets/Prefabs/Unlockl Player Skill/UnlockVarJump.prefab
+  artifactKey: Guid(86e466efb37716c46a195c175730104f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Unlockl Player Skill/UnlockVarJump.prefab using Guid(86e466efb37716c46a195c175730104f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (UnlockDash) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\build\output\unity\unity\Modules\Animation\Director\AnimatorControllerPlayable.cpp line 333]
+
+ -> (artifact id: '3e6b91ecea23f972abe4c842eea849c0') in 0.022732 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 46
+========================================================================
+Received Import Request.
+  Time since last request: 0.826229 seconds.
+  path: Assets/Prefabs/Unlockl Player Skill/UnlockWallJump.prefab
+  artifactKey: Guid(a2c5ef87d82ddba40b6c2dafdd30b752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Unlockl Player Skill/UnlockWallJump.prefab using Guid(a2c5ef87d82ddba40b6c2dafdd30b752) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (UnlockDash) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\build\output\unity\unity\Modules\Animation\Director\AnimatorControllerPlayable.cpp line 333]
+
+ -> (artifact id: '6b8e56cee1659c37997953bc6954695d') in 0.023372 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 46
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.493 seconds
+Refreshing native plugins compatible for Editor in 6.46 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.604 seconds
+Domain Reload Profiling: 2095ms
+	BeginReloadAssembly (163ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (42ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (246ms)
+		LoadAssemblies (305ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (19ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1605ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (659ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (106ms)
+			ProcessInitializeOnLoadAttributes (447ms)
+			ProcessInitializeOnLoadMethodAttributes (81ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 5.94 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5935 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 54 unused Assets / (0.7 MB). Loaded Objects now: 6515.
+Memory consumption went from 211.2 MB to 210.4 MB.
+Total: 6.212100 ms (FindLiveObjects: 0.660400 ms CreateObjectMapping: 0.571100 ms MarkObjects: 4.554400 ms  DeleteObjects: 0.425200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.484 seconds
+Refreshing native plugins compatible for Editor in 5.25 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.682 seconds
+Domain Reload Profiling: 2163ms
+	BeginReloadAssembly (161ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (243ms)
+		LoadAssemblies (302ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (20ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1682ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (691ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (114ms)
+			ProcessInitializeOnLoadAttributes (468ms)
+			ProcessInitializeOnLoadMethodAttributes (82ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 7.16 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5935 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 54 unused Assets / (0.7 MB). Loaded Objects now: 6519.
+Memory consumption went from 211.2 MB to 210.4 MB.
+Total: 5.543500 ms (FindLiveObjects: 0.736400 ms CreateObjectMapping: 0.493500 ms MarkObjects: 3.887400 ms  DeleteObjects: 0.424400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.472 seconds
+Refreshing native plugins compatible for Editor in 4.92 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.635 seconds
+Domain Reload Profiling: 2105ms
+	BeginReloadAssembly (161ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (44ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (235ms)
+		LoadAssemblies (295ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (18ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (1636ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (715ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (115ms)
+			ProcessInitializeOnLoadAttributes (486ms)
+			ProcessInitializeOnLoadMethodAttributes (86ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 6.52 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5935 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 54 unused Assets / (0.7 MB). Loaded Objects now: 6523.
+Memory consumption went from 211.2 MB to 210.4 MB.
+Total: 5.096000 ms (FindLiveObjects: 0.583700 ms CreateObjectMapping: 0.242600 ms MarkObjects: 3.833000 ms  DeleteObjects: 0.435200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.483 seconds
+Refreshing native plugins compatible for Editor in 6.08 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.680 seconds
+Domain Reload Profiling: 2160ms
+	BeginReloadAssembly (161ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (44ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (246ms)
+		LoadAssemblies (305ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (18ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (1680ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (683ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (99ms)
+			ProcessInitializeOnLoadAttributes (473ms)
+			ProcessInitializeOnLoadMethodAttributes (83ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 6.05 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5935 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 54 unused Assets / (0.7 MB). Loaded Objects now: 6527.
+Memory consumption went from 211.2 MB to 210.5 MB.
+Total: 5.379900 ms (FindLiveObjects: 0.570400 ms CreateObjectMapping: 0.546700 ms MarkObjects: 3.809000 ms  DeleteObjects: 0.452300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 463.976001 seconds.
+  path: Assets/Resources/Environments/Area specfic architecture/Deepnest/Mask Maker room/bench_top.png
+  artifactKey: Guid(a1fafd40983f197409e1944ce48b3b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Environments/Area specfic architecture/Deepnest/Mask Maker room/bench_top.png using Guid(a1fafd40983f197409e1944ce48b3b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8c3c6d2d0810294df426d35ee42468d') in 0.075597 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/Environments/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/bone_bench.png
+  artifactKey: Guid(11a91c1b378923d488397a9fd505bb09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Environments/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/bone_bench.png using Guid(11a91c1b378923d488397a9fd505bb09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d54712e7b8ffa402a743a90355ccd22') in 0.015409 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0002_bench_lit.png
+  artifactKey: Guid(6d6ee860df47d8d458ad347bf4bfae40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0002_bench_lit.png using Guid(6d6ee860df47d8d458ad347bf4bfae40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e61919630eb8b1585fdd362a44a920c2') in 0.018276 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/Environments/Area specfic architecture/Godhome/GG_bench_0001_3.png
+  artifactKey: Guid(b74a51c8ef89fc645920419e191ae3df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Environments/Area specfic architecture/Godhome/GG_bench_0001_3.png using Guid(b74a51c8ef89fc645920419e191ae3df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '568924244e85e0942c5a65bb43471ac8') in 0.013669 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Godhome/GG_bench_0003_2.png
+  artifactKey: Guid(4f45a257cf7475f4895b236e0fb812db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Godhome/GG_bench_0003_2.png using Guid(4f45a257cf7475f4895b236e0fb812db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bd13360bfe2ab1ebf709259d0ac230b') in 0.015712 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Environments/Area specfic architecture/Colosseum/col_0003_bench.png
+  artifactKey: Guid(774ab8ab9d0812b4787fcd152a213eeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Environments/Area specfic architecture/Colosseum/col_0003_bench.png using Guid(774ab8ab9d0812b4787fcd152a213eeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecc0e67221cb2662a9c90bd2095b5cad') in 0.016665 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Environments/Area specfic architecture/Fungal Wastes/leg_eater_bench.png
+  artifactKey: Guid(b46638ea842f34f48936b38a933ae21b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Environments/Area specfic architecture/Fungal Wastes/leg_eater_bench.png using Guid(b46638ea842f34f48936b38a933ae21b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f63f68d058f89cf4d085ced922979324') in 0.020637 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Colosseum/Colosseum_dungeon_chars_0007_back_bench.png
+  artifactKey: Guid(d6b3ed21240ec3a42b977c7561702c4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Colosseum/Colosseum_dungeon_chars_0007_back_bench.png using Guid(d6b3ed21240ec3a42b977c7561702c4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa9f704258fbf6601e67a02f353bf62f') in 0.023865 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Environments/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/bone_bench_lit.png
+  artifactKey: Guid(7a848d7e8741e164a8c0f56bb56439e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Environments/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/bone_bench_lit.png using Guid(7a848d7e8741e164a8c0f56bb56439e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa712a69a502758e6778cc483d56943c') in 0.017525 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Godhome/GG_bench_0001_3.png
+  artifactKey: Guid(fafb273fef63b974590dbc53b5e37ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Godhome/GG_bench_0001_3.png using Guid(fafb273fef63b974590dbc53b5e37ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a61251247a5f2ddb40383c1bf63d5c9') in 0.011243 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Environments/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0003_bench_unlit.png
+  artifactKey: Guid(478bd49a818b5cd4381621a36475f4d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Environments/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0003_bench_unlit.png using Guid(478bd49a818b5cd4381621a36475f4d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c413dd9055442629fd65367747d1f6f') in 0.022994 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Environments/Area specfic architecture/Queen_s Gardens/guardian_bench.png
+  artifactKey: Guid(b9f14b9142d3bee4881b59183e221b8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Environments/Area specfic architecture/Queen_s Gardens/guardian_bench.png using Guid(b9f14b9142d3bee4881b59183e221b8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f61d810ec02efc86aced5605f4a2ae1') in 0.020398 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Environments/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0006_bench_back.png
+  artifactKey: Guid(2521d6545ba164c44afe8f5b32227267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Environments/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0006_bench_back.png using Guid(2521d6545ba164c44afe8f5b32227267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40345c6371a5c33943f211316c2ce123') in 0.027406 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/bone_bench_lit.png
+  artifactKey: Guid(09b546d799bc790439ea046c6307cd69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/bone_bench_lit.png using Guid(09b546d799bc790439ea046c6307cd69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50601ca32cfe813ee718ea01201f1ae9') in 0.017893 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Environments/Area specfic architecture/Godhome/GG_bench_metal_0000_2.png
+  artifactKey: Guid(081427a66b0972a479b6c9dd93334a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Environments/Area specfic architecture/Godhome/GG_bench_metal_0000_2.png using Guid(081427a66b0972a479b6c9dd93334a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '234ffc7047420e4f6ab461492ec5e28a') in 0.021676 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Environments/Area specfic architecture/Colosseum/Colosseum_dungeon_chars_0007_back_bench.png
+  artifactKey: Guid(9a86d7226c447254fb3eb2f6c26bd039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Environments/Area specfic architecture/Colosseum/Colosseum_dungeon_chars_0007_back_bench.png using Guid(9a86d7226c447254fb3eb2f6c26bd039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2830e6e2aaacf16a2996dffbb11f5c45') in 0.022149 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Godhome/GG_bench_0002_1.png
+  artifactKey: Guid(a69f19022031d5147a77df5ba0d8cb5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Godhome/GG_bench_0002_1.png using Guid(a69f19022031d5147a77df5ba0d8cb5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c91cddc88ae95d66bb9a55164c66a50b') in 0.012986 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Resources/Environments/Area specfic architecture/Hive/hive_unique_bits_0004_bench_blob_cracked.png
+  artifactKey: Guid(5a2474dcf2e39124387c858d98a3090f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Environments/Area specfic architecture/Hive/hive_unique_bits_0004_bench_blob_cracked.png using Guid(5a2474dcf2e39124387c858d98a3090f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1efe97d9d7b7e75d1d4f5ae2a18d3341') in 0.031366 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.418152 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Fungal Wastes/leg_eater_bench.png
+  artifactKey: Guid(fa675fb471f9b4c428415f962c7f508a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Fungal Wastes/leg_eater_bench.png using Guid(fa675fb471f9b4c428415f962c7f508a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db28467e3dc9cc70909dbb86edc5ba2a') in 0.016063 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Fungal Wastes/Mantis Village/mantis_sign_01_bench.png
+  artifactKey: Guid(35f74e28654fab74fbfae8c0b1938f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Fungal Wastes/Mantis Village/mantis_sign_01_bench.png using Guid(35f74e28654fab74fbfae8c0b1938f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a6601e1317dc47cad43e1d5bf1b7b05') in 0.019208 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Fungal Wastes/Mantis Village/mantis_bench.png
+  artifactKey: Guid(5b904790ac34b5c4ea6287d30f36d20b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Fungal Wastes/Mantis Village/mantis_bench.png using Guid(5b904790ac34b5c4ea6287d30f36d20b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbc7d4cac3bac90bfe4750ee8e86cec9') in 0.018250 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room1.png
+  artifactKey: Guid(83cd65e7ec3eeaf48999ad6b59e5248b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room1.png using Guid(83cd65e7ec3eeaf48999ad6b59e5248b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '947b308e4ae66192a9e727468c08dcd9') in 0.017885 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room_bits_0001_11.png
+  artifactKey: Guid(6aeb5e98bc42efc468b4d88f82dfa914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room_bits_0001_11.png using Guid(6aeb5e98bc42efc468b4d88f82dfa914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceb6a4a4a1aca89a8acf2b925e2ff08d') in 0.019180 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room_bits_0004_8.png
+  artifactKey: Guid(f4ffea8cedd77f942aadd6e569c555e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room_bits_0004_8.png using Guid(f4ffea8cedd77f942aadd6e569c555e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20ecdc3a16b68bbf9da6198bddfa4437') in 0.020802 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Resources/Environments/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room_bits_0002_10.png
+  artifactKey: Guid(15b32acbac3f996419fcfb113ea0a257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Environments/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room_bits_0002_10.png using Guid(15b32acbac3f996419fcfb113ea0a257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dadcf2b4309cd19d4a54a1a7e3e8fe9') in 0.015212 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Environments/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room1.png
+  artifactKey: Guid(de9164aedb110ac46ad1f16bc3d4a969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Environments/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room1.png using Guid(de9164aedb110ac46ad1f16bc3d4a969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f6bfb248daab308249a37238c3c8b70') in 0.007176 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room_bits_0006_6.png
+  artifactKey: Guid(635290d8c7e0363448cea76edf4f3952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room_bits_0006_6.png using Guid(635290d8c7e0363448cea76edf4f3952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9e51d19f7e894353ee86fe5e632adbd') in 0.019460 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Environments/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room_bits_0007_5.png
+  artifactKey: Guid(97275939337cc8944ba7a894d57bece4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Environments/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room_bits_0007_5.png using Guid(97275939337cc8944ba7a894d57bece4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c34d4df6bbd2c587872ab480b37f3482') in 0.017647 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room_bits_0010_2.png
+  artifactKey: Guid(b125a4c72766030468fa46d9d21da334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room_bits_0010_2.png using Guid(b125a4c72766030468fa46d9d21da334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7dbcce3d913dea401112c7fedd406ac') in 0.023138 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room_bits_0011_1.png
+  artifactKey: Guid(ea7f43589139cd94892fbfc7b5ec50c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room_bits_0011_1.png using Guid(ea7f43589139cd94892fbfc7b5ec50c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0c54c45032897c9487ce7821d725c39') in 0.023873 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Kingdom_s Edge/nailmaster_benches_0001_1_snow.png
+  artifactKey: Guid(ae1cfdda60c5a5f42ab2d70c34ef3a3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Kingdom_s Edge/nailmaster_benches_0001_1_snow.png using Guid(ae1cfdda60c5a5f42ab2d70c34ef3a3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '142b6ab2bba89d791b68175cd1ab6406') in 0.022029 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room_bits_0000_12bench_lit.png
+  artifactKey: Guid(5cb471996d2446847b64fd56e29826ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room_bits_0000_12bench_lit.png using Guid(5cb471996d2446847b64fd56e29826ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a2638d85dc586978a7d0913ea92d8f8') in 0.020897 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room_bits_0005_7.png
+  artifactKey: Guid(c128428b5d2d9c8468f2b8c4b87cc850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room_bits_0005_7.png using Guid(c128428b5d2d9c8468f2b8c4b87cc850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14e9deed3d9951c5b45f3515d9b81832') in 0.018804 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room_bits_0002_10.png
+  artifactKey: Guid(77d53daddd24a2645881062011d48b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room_bits_0002_10.png using Guid(77d53daddd24a2645881062011d48b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b72f832c8cc5ee6f37565a50eb777655') in 0.009256 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Environments/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room_bits_0004_8.png
+  artifactKey: Guid(6312dc9ceb4d45a4395ddde848057306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Environments/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room_bits_0004_8.png using Guid(6312dc9ceb4d45a4395ddde848057306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a730af6dff08d164078b43425210761c') in 0.012843 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/Resources/Environments/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room_bits_0011_1.png
+  artifactKey: Guid(5c4f1cedb1750b74290545d5a877e8e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Environments/Area specfic architecture/Howling Cliffs/nail_cliff_bench_room_bits_0011_1.png using Guid(5c4f1cedb1750b74290545d5a877e8e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eeef2ebc02bb8b89fb51624e936bb08') in 0.020971 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.236763 seconds.
+  path: Assets/Architecture & Environment/pay_bench0012.png
+  artifactKey: Guid(8e4364b5fc0c95d41982372b2e02b689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/pay_bench0012.png using Guid(8e4364b5fc0c95d41982372b2e02b689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '130fa2858f8143ef93885bf39bccae83') in 0.017906 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.010041 seconds.
+  path: Assets/Resources/Environments/Area specfic architecture/Deepnest/Distant Village/spider_bench_states_0000_2.png
+  artifactKey: Guid(31c2052304c710c46995264256d74f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Environments/Area specfic architecture/Deepnest/Distant Village/spider_bench_states_0000_2.png using Guid(31c2052304c710c46995264256d74f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a176c13972a19138b225633b003f0422') in 0.033943 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Environments/Area specfic architecture/Deepnest/Distant Village/spider_town_bench.png
+  artifactKey: Guid(44ae150016538ca4b9a09f9c177b3606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Environments/Area specfic architecture/Deepnest/Distant Village/spider_town_bench.png using Guid(44ae150016538ca4b9a09f9c177b3606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daed64dba0a438e92b1cdaaae24dd332') in 0.026099 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Resources/Environments/Tram & Stagways/tram_interior_bench.png
+  artifactKey: Guid(333717b4050629f4faf076835289f084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Environments/Tram & Stagways/tram_interior_bench.png using Guid(333717b4050629f4faf076835289f084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b06fe5fe89a346aece68c1aa10adfaa') in 0.022596 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Resources/Environments/Tram & Stagways/tram_interior_bench_lit.png
+  artifactKey: Guid(ffba2a45123fe6e4caeb0c9be3f4aaa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Environments/Tram & Stagways/tram_interior_bench_lit.png using Guid(ffba2a45123fe6e4caeb0c9be3f4aaa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de63fb39c6b2c923dd16815faceca784') in 0.024346 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Deepnest/Distant Village/spider_town_bench.png
+  artifactKey: Guid(c7522e00d8bb69f44ba24500f4f4d02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Deepnest/Distant Village/spider_town_bench.png using Guid(c7522e00d8bb69f44ba24500f4f4d02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd77e35fec0afee932abf60477b7540d8') in 0.021251 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Resources/Environments/Signs/waterways_bench_sign_02.png
+  artifactKey: Guid(4b32190edaf8c0941a702a7018391d00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Environments/Signs/waterways_bench_sign_02.png using Guid(4b32190edaf8c0941a702a7018391d00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b87ab9a6a5bdff8d19cf736181b6e8a') in 0.023131 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Deepnest/Distant Village/spider_bench_states_0001_1.png
+  artifactKey: Guid(f01a6e01d6ca8b9458f7ff5d287eaca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Deepnest/Distant Village/spider_bench_states_0001_1.png using Guid(f01a6e01d6ca8b9458f7ff5d287eaca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dd63e4aa1c9422743db061afc98ae3e') in 0.031761 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Environments/Area specfic architecture/Hive/SpriteAtlasTexture-Hive_Bench_Gloop-512x1024-fmt12.png
+  artifactKey: Guid(202169155bef3294d93e882e09b91079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Environments/Area specfic architecture/Hive/SpriteAtlasTexture-Hive_Bench_Gloop-512x1024-fmt12.png using Guid(202169155bef3294d93e882e09b91079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f6272df43ca52b0fe6a105df5abbea6') in 0.020159 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Architecture & Environment/Signs/waterways_bench_sign_02.png
+  artifactKey: Guid(d189c6f502cfa50419e68f14924dc745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Signs/waterways_bench_sign_02.png using Guid(d189c6f502cfa50419e68f14924dc745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b70717027056e2246b355c848f11eab') in 0.018260 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/town_bench_lit.png
+  artifactKey: Guid(1c340ca9e20f88c41b8bfb00db0e36c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/town_bench_lit.png using Guid(1c340ca9e20f88c41b8bfb00db0e36c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f81cde3587a12cdcf81647335bcbaa3e') in 0.018601 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.330023 seconds.
+  path: Assets/Resources/Environments/Chests and Geo/Large Geo deposits - atlas0 #250006.png
+  artifactKey: Guid(20cf36aba0232fd47a0b1eeee113aadb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Environments/Chests and Geo/Large Geo deposits - atlas0 #250006.png using Guid(20cf36aba0232fd47a0b1eeee113aadb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13eca8e793d0c6f20a7b591331b16f65') in 0.100116 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

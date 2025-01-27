@@ -112,13 +112,19 @@ public class PlayerController : MonoBehaviour
     [Space(5)]
 
 
-
+    [Header("Audio")]
+    [SerializeField] AudioClip landingSound;
+    [SerializeField] AudioClip jumpSound;
+    [SerializeField] AudioClip dashSound;
+    [SerializeField] AudioClip attackSound;
+    [SerializeField] AudioClip spellCastSound;
+    [SerializeField] AudioClip hurtSound;
 
 
     private SpriteRenderer sr;
 
-    private float xAxis, yAxis;
-    Animator anim;
+    public float xAxis, yAxis;
+    public Animator anim;
     [HideInInspector] public PlayerStateList pState;
     public Rigidbody2D rb;
 
@@ -135,7 +141,8 @@ public class PlayerController : MonoBehaviour
     public bool unlockUpCast;
     public bool unlockDownCast;
 
-
+    private bool landingSoundPlayed;
+    private AudioSource audioSource;
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -159,6 +166,7 @@ public class PlayerController : MonoBehaviour
 
         sr = GetComponent<SpriteRenderer>();
 
+        audioSource = GetComponent<AudioSource>();
 
 
         gravity = rb.gravityScale;
@@ -172,13 +180,17 @@ public class PlayerController : MonoBehaviour
         pState.alive = true;
     }
 
+    
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            SaveData.Instance.SavePlayerData();
-        }
+        
+        //if (Input.GetKeyDown(KeyCode.M))
+        //{
+        //    SaveData.Instance.SavePlayerData();
+        //}
         //Debug.Log(pState.alive);
+
+        if (GameManager.Instance.gameIsPaused) return;
         if (pState.cutScene) return;
         if (pState.alive)
         {
@@ -287,7 +299,7 @@ public class PlayerController : MonoBehaviour
 
     private void StartDash()
     {
-        //Got some problems with canDash variable (fixed)
+        
         if (Input.GetButtonDown("Dash") && canDash && !dashed)
         {
             StartCoroutine(Dash());
@@ -352,9 +364,10 @@ public class PlayerController : MonoBehaviour
         pState.dashing = true;
 
         anim.SetTrigger("Dashing");
+        audioSource.PlayOneShot(dashSound);
         rb.gravityScale = 0;
         int _dir = pState.lookingRight ? 1 : -1;
-        rb.velocity = new Vector2(-_dir * dashSpeed, 0);
+        rb.velocity = new Vector2(_dir * dashSpeed, 0);
         /*if (IsGrounded())*/
         //Instantiate(dashEffect, transform);
         yield return new WaitForSeconds(dashTime);
@@ -371,14 +384,11 @@ public class PlayerController : MonoBehaviour
         yAxis = Input.GetAxisRaw("Vertical");
         attack = Input.GetButtonDown("Attack");
 
-        if (Input.GetButtonDown("Cast/Heal"))
+        if (Input.GetButton("Cast/Heal"))
         {
             castOrHealTimer += Time.deltaTime;
         }
-        else
-        {
-            castOrHealTimer = 0;
-        }
+        
     }
     private void Flip()
     {
@@ -396,7 +406,7 @@ public class PlayerController : MonoBehaviour
 
     private void Heal()
     {
-        if (Input.GetButton("Cast/Heal") && castOrHealTimer > 0.05f && Health < maxHealth && !pState.jumping && !pState.dashing && Mana > 0)
+        if (Input.GetButton("Cast/Heal") && castOrHealTimer > 0.1f && Health < maxHealth && Mana > 0 && !pState.jumping && !pState.dashing)
         {
             pState.healing = true;
             //healing animation anim.SetBool("Healing", true);
@@ -422,6 +432,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0)
         {
+            audioSource.PlayOneShot(jumpSound);
             rb.velocity = new Vector2(rb.velocity.x, 0);
 
             pState.jumping = false;
@@ -434,6 +445,7 @@ public class PlayerController : MonoBehaviour
         //Double jump
         if (!IsGrounded() && airJumpCounter < maxAirJumps && Input.GetButtonDown("Jump") && unlockVarJump)
         {
+            audioSource.PlayOneShot(landingSound);
             pState.jumping = true;
             airJumpCounter++;
             rb.velocity = new Vector3(rb.velocity.x, jumpForce);
@@ -459,6 +471,11 @@ public class PlayerController : MonoBehaviour
     {
         if (IsGrounded())
         {
+            if (!landingSoundPlayed)
+            {
+                audioSource.PlayOneShot(landingSound);
+                landingSoundPlayed = true;
+            }
             pState.jumping = false;
             coyoteTimeCounter = coyoteTime;
             airJumpCounter = 0;
@@ -466,6 +483,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             coyoteTimeCounter -= Time.deltaTime;
+            landingSoundPlayed = false;
         }
         if (Input.GetButtonDown("Jump"))
         {
@@ -505,6 +523,7 @@ public class PlayerController : MonoBehaviour
                 int _recoilLeftOrRight = pState.lookingRight ? 1 : -1;
 
                 anim.SetTrigger("Attacking");
+                audioSource.PlayOneShot(attackSound);
                 Instantiate(slashEffect, SideAttackTransform);
                 Hit(SideAttackTransform, SideAttackArea, ref pState.recoilingX, Vector2.left * _recoilLeftOrRight, recoilXSpeed);
 
@@ -557,8 +576,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    //Need to change this below code for up and down attack animation, they have other animation with match with them.
-    //Just for testing
+   
     void SlashEffectAtAngle(GameObject _slashEffect, int _effectAngle, Transform _attackTransform)
     {
         _slashEffect = Instantiate(_slashEffect, _attackTransform);
@@ -638,6 +656,7 @@ public class PlayerController : MonoBehaviour
 
         if (pState.alive)
         {
+            audioSource.PlayOneShot(hurtSound);
             Health -= Mathf.RoundToInt(_damage);
             if (Health <= 0)
             {
@@ -667,12 +686,14 @@ public class PlayerController : MonoBehaviour
         {
             TimeSinceCast += Time.deltaTime;
         }
+        if (!Input.GetButton("Cast/Heal"))
+        {
+            castOrHealTimer = 0;
+        }
 
 
 
-        ///////////////////////////////////////////////////////////////////////
-        // Bug when using fireball script for down spell./////////////////////
-        /////////////////////////////////////////////////////////////////////
+        //DownSpell Bug
 
 
         if (IsGrounded())
@@ -689,10 +710,10 @@ public class PlayerController : MonoBehaviour
     IEnumerator CastCoroutine()
     {
         
-
         //Side Spell
         if ((yAxis == 0 || (yAxis < 0 & IsGrounded())) && unlockSideCast)
         {
+            audioSource.PlayOneShot(spellCastSound);
             anim.SetBool("Casting", true);
             yield return new WaitForSeconds(0.25f /*Casting Time, need fixed*/);
 
@@ -716,6 +737,7 @@ public class PlayerController : MonoBehaviour
         //Up spell
         else if (yAxis > 0 && unlockUpCast)
         {
+            audioSource.PlayOneShot(spellCastSound);
             anim.SetBool("Casting", true);
             yield return new WaitForSeconds(0.25f /*Casting Time, need fixed*/);
 
@@ -729,6 +751,8 @@ public class PlayerController : MonoBehaviour
         //Down Spell
         else if ((yAxis < 0 && !IsGrounded()) && unlockDownCast)
         {
+            
+            Debug.Log("DownCast");
             anim.SetBool("Casting", true);
             yield return new WaitForSeconds(0.25f /*Casting Time, need fixed*/);
 
@@ -783,6 +807,7 @@ public class PlayerController : MonoBehaviour
 
         yield return new WaitForSeconds(0.9f);
         Instantiate(GameManager.Instance.shade, transform.position, Quaternion.identity);
+        Respawned();
     }
 
     public void Respawned()
@@ -832,7 +857,7 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(wallJumpingDirection * wallJumpingPower.x, wallJumpingPower.y);
 
             dashed = false;
-            airJumpCounter = 0; //Become double jump?
+            airJumpCounter = 0;
 
             if ((pState.lookingRight && transform.eulerAngles.y == 0) || (!pState.lookingRight && transform.eulerAngles.y != 0))
             {

@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
 using UnityEngine;
 
 public class ZombieBasic : EnemyController
@@ -16,6 +15,7 @@ public class ZombieBasic : EnemyController
 
     protected override void Start()
     {
+        
         base.Start();
         ChangeState(EnemyStates.ZB_Idle);
 
@@ -53,9 +53,10 @@ public class ZombieBasic : EnemyController
                 }
 
                 RaycastHit2D _hit = Physics2D.Raycast(transform.position + _ledgeCheckStartPoint, _wallCheckDir, ledgeCheckX * 10); //doesnt work if ledgeCheckX < 0.45 ?
-
+                
                 if (_hit.collider != null && _hit.collider.gameObject.CompareTag("Player"))
                 {
+                    UnityEngine.Debug.Log("1");
                     ChangeState(EnemyStates.ZB_Suprised);
                     
                 }

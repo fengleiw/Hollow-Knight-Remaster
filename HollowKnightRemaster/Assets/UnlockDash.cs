@@ -33,7 +33,7 @@ public class UnlockDash : MonoBehaviour
 
         canvasUI.SetActive(true);
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(2.5f);
 
         PlayerController.Instance.unlockDash = true;
         SaveData.Instance.SavePlayerData();

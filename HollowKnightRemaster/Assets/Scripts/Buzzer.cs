@@ -27,7 +27,7 @@ public class Buzzer : EnemyController
         switch (GetCurrentEnemyState)
         {
             case EnemyStates.Buzzer_Idle:
-                rb.velocity = new Vector2(0, 0);
+                //rb.velocity = new Vector2(0, 0);
                 if(_dist < chaseDistance) 
                 {
                     ChangeState(EnemyStates.Buzzer_Chase); 
@@ -57,7 +57,7 @@ public class Buzzer : EnemyController
                 break;
 
             case EnemyStates.Buzzer_Death:
-                Death(Random.Range(5,10));
+                Death(Random.Range(1,3));
                 break;
         }
     }

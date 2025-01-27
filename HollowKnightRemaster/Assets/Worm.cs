@@ -6,11 +6,9 @@ using UnityEngine;
 public class Worm : EnemyController
 {
     [SerializeField] GameObject DetectedField;
-    [SerializeField] Transform spawnPoint;
     [SerializeField] GameObject worm;
     float timer;
     public bool detected;
-    public bool rightSide;
     public float wormSpeed = 10f;
     public static Worm Instance;
     protected override void Start()
@@ -21,43 +19,61 @@ public class Worm : EnemyController
     protected override void Update()
     {
         base.Update();
+        Debug.Log(SpawnMoss.Instance.right);
     }
 
     protected override void UpdateEnemyState()
     {
-        /*if(health <= 0)
+        if (health <= 0)
         {
             Death(0.5f);
-        }*/
+            Destroy(SpawnMoss.Instance.gameObject);
+            Destroy(gameObject);
+        }
         switch (GetCurrentEnemyState)
         {
             case EnemyStates.Worm_Appear:
+
                 ChangeState(EnemyStates.Worm_Charger);
                 break;
 
             case EnemyStates.Worm_Charger:
-                rb.velocity = new Vector2(wormSpeed, 0);
+                if (SpawnMoss.Instance.right)
+                {
+                    transform.localScale = new Vector3(-1, 1, 1);
+                    rb.velocity = new Vector2(-wormSpeed, 0);
+                    //SpawnMoss.Instance.right = !SpawnMoss.Instance.right;
+                    if (MossWalCheck.Instance.walled || !MossGroundCheck.Instance.grounded)
+                    {
+                        anim.SetTrigger("Disappear");
+                        StartCoroutine(DestroyAfterAnimation());
+                        
+                    }
+                }
+
+                else
+                {
+                    rb.velocity = new Vector2(wormSpeed, 0);
+                    //SpawnMoss.Instance.right = !SpawnMoss.Instance.right;
+                    if (MossWalCheck.Instance.walled || !MossGroundCheck.Instance.grounded)
+                    {
+                        anim.SetTrigger("Disappear");
+                       StartCoroutine(DestroyAfterAnimation());
+                        
+                    }
+                }
 
                 break;
 
         }
 
     }
-
-    private void OnTriggerStay2D(Collider2D collision)
+    private IEnumerator DestroyAfterAnimation()
     {
-        if (collision.CompareTag("Player"))
-        {
-            detected = true;
-        }
-
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            detected = false;
-        }
+        // Wait for the length of the "Disappear" animation
+        yield return new WaitForSeconds(0.75f);
+        Destroy(gameObject);
     }
 
 }
+

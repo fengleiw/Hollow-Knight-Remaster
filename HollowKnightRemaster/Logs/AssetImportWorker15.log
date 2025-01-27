@@ -1,0 +1,1579 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.27f1 (73effa14754f) revision 7598074'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit CoreSingleLanguage' Language: 'en' Physical Memory: 15724 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.27f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker15
+-projectPath
+D:/Remaster/Hollow-Knight-Remaster/HollowKnightRemaster
+-logFile
+Logs/AssetImportWorker15.log
+-srvPort
+50500
+Successfully changed project path to: D:/Remaster/Hollow-Knight-Remaster/HollowKnightRemaster
+D:/Remaster/Hollow-Knight-Remaster/HollowKnightRemaster
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [25348] Host "[IP] 192.168.2.194 [Port] 0 [Flags] 2 [Guid] 3192026088 [EditorId] 3192026088 [Version] 1048832 [Id] WindowsEditor(7,LeiFeng) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [25348] Host "[IP] 192.168.2.194 [Port] 0 [Flags] 2 [Guid] 3192026088 [EditorId] 3192026088 [Version] 1048832 [Id] WindowsEditor(7,LeiFeng) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 16.86 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.27f1 (73effa14754f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.27f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Remaster/Hollow-Knight-Remaster/HollowKnightRemaster/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f9d)
+    Vendor:   NVIDIA
+    VRAM:     3937 MB
+    Driver:   32.0.15.6636
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.27f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.27f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56564
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.27f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.27f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.011357 seconds.
+- Loaded All Assemblies, in  0.426 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.320 seconds
+Domain Reload Profiling: 743ms
+	BeginReloadAssembly (128ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (78ms)
+	LoadAllAssembliesAndSetupDomain (160ms)
+		LoadAssemblies (125ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (158ms)
+			TypeCache.Refresh (156ms)
+				TypeCache.ScanAssembly (143ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (321ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (255ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (177ms)
+			ProcessInitializeOnLoadMethodAttributes (57ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.792 seconds
+Refreshing native plugins compatible for Editor in 5.16 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.805 seconds
+Domain Reload Profiling: 1591ms
+	BeginReloadAssembly (176ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (54ms)
+	LoadAllAssembliesAndSetupDomain (510ms)
+		LoadAssemblies (368ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (240ms)
+			TypeCache.Refresh (199ms)
+				TypeCache.ScanAssembly (184ms)
+			ScanForSourceGeneratedMonoScriptInfo (28ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (805ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (634ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (87ms)
+			ProcessInitializeOnLoadAttributes (442ms)
+			ProcessInitializeOnLoadMethodAttributes (82ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 4.80 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6101 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 93 unused Assets / (353.4 KB). Loaded Objects now: 6568.
+Memory consumption went from 247.9 MB to 247.5 MB.
+Total: 4.546600 ms (FindLiveObjects: 0.457400 ms CreateObjectMapping: 0.491600 ms MarkObjects: 3.364800 ms  DeleteObjects: 0.231600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 76062.140911 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Abyss/Lighthouse_Room_Interior_0003_10.png
+  artifactKey: Guid(15bde45d1ce7ee041acb2706793d877a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Abyss/Lighthouse_Room_Interior_0003_10.png using Guid(15bde45d1ce7ee041acb2706793d877a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07a7e103a20df0f36755c1a72b10e806') in 0.145782 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Abyss/SpriteAtlasTexture-Lighthouse_Interior-2048x4096-fmt12.png
+  artifactKey: Guid(164b459af2db395459933ded0c9e13b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Abyss/SpriteAtlasTexture-Lighthouse_Interior-2048x4096-fmt12.png using Guid(164b459af2db395459933ded0c9e13b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11d46fb6913fefceee3479a60507a08a') in 0.029137 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Abyss/SpriteAtlasTexture-Abyss_Pier-1024x1024-fmt12.png
+  artifactKey: Guid(37856359eaede0f4da1437f72c74355e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Abyss/SpriteAtlasTexture-Abyss_Pier-1024x1024-fmt12.png using Guid(37856359eaede0f4da1437f72c74355e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9ed72251fa7066941e55a44f898df8e') in 0.026784 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Abyss/Lighthouse_Room_Interior_0014_2.png
+  artifactKey: Guid(4d7e7c9bdd785f1468a256c56c7862df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Abyss/Lighthouse_Room_Interior_0014_2.png using Guid(4d7e7c9bdd785f1468a256c56c7862df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18446561a8dd1dfbdacf581359116fc0') in 0.025327 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Abyss/Lighthouse_Room_Interior_0005_9.png
+  artifactKey: Guid(2950463fd9609af45aa8bf408d5aa31e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Abyss/Lighthouse_Room_Interior_0005_9.png using Guid(2950463fd9609af45aa8bf408d5aa31e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f8da810bd7d752d8e5948d1b5d42f26') in 0.036926 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Abyss/pier_0002_1.png
+  artifactKey: Guid(879a3522bc414b84b97ed87d9369e97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Abyss/pier_0002_1.png using Guid(879a3522bc414b84b97ed87d9369e97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa65a78ec2e8752d91f1e586a5dd69f9') in 0.026802 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Abyss/SpriteAtlasTexture-Lighthouse_Struts-1024x2048-fmt12.png
+  artifactKey: Guid(851ba6597a55cef41b6476c2caf98824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Abyss/SpriteAtlasTexture-Lighthouse_Struts-1024x2048-fmt12.png using Guid(851ba6597a55cef41b6476c2caf98824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6b5dba242077cfb24ac626f0206c6fc') in 0.030168 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Abyss/lighthouse_top_windows.png
+  artifactKey: Guid(b4f677ab94015f74bbcaf775141f8de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Abyss/lighthouse_top_windows.png using Guid(b4f677ab94015f74bbcaf775141f8de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f02c96748cc5a9369cdbc9ad11ec555') in 0.031422 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Abyss/Lighthouse_Room_Interior_0006_8.png
+  artifactKey: Guid(9d5988bbf56b93948bed252c3ef93bb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Abyss/Lighthouse_Room_Interior_0006_8.png using Guid(9d5988bbf56b93948bed252c3ef93bb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25f822a50637cab686c1c686789eed13') in 0.023800 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Abyss/SpriteAtlasTexture-Lighthouse-2048x4096-fmt12.png
+  artifactKey: Guid(e95b256e327232844b6a77c3f9fb01dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Abyss/SpriteAtlasTexture-Lighthouse-2048x4096-fmt12.png using Guid(e95b256e327232844b6a77c3f9fb01dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef2ddb6df30ea16bd2c075dc9c04d8cf') in 0.026579 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Abyss/SpriteAtlasTexture-Abyss_Vine-2048x1024-fmt12.png
+  artifactKey: Guid(0b201462c43e5d74d9b22f7dbf48aec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Abyss/SpriteAtlasTexture-Abyss_Vine-2048x1024-fmt12.png using Guid(0b201462c43e5d74d9b22f7dbf48aec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be8ed7b9cae3388b787aeaf214e42edd') in 0.026411 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.878414 seconds.
+  path: Assets/New Universal Render Pipeline Asset.asset
+  artifactKey: Guid(29dd3369c7972f24599ba03ce3ad52c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Universal Render Pipeline Asset.asset using Guid(29dd3369c7972f24599ba03ce3ad52c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b863fa7ff1022f37433349067e7f760') in 0.000905 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.768328 seconds.
+  path: Assets/Scenes/Scene 1.unity
+  artifactKey: Guid(c2684c2fd70f14f499e17b506d0fc990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Scene 1.unity using Guid(c2684c2fd70f14f499e17b506d0fc990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a98e5827f781dfbcdbe127b517c24dc6') in 0.000564 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.337444 seconds.
+  path: Assets/Scenes/DemoScene.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/DemoScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8db4c29f29b95ba61ce7902baff0cb38') in 0.000473 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 48.130736 seconds.
+  path: Assets/Enemies Animations
+  artifactKey: Guid(2ee565b4bf57a1c468f2c43d2da64995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemies Animations using Guid(2ee565b4bf57a1c468f2c43d2da64995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2867f956b10d69e7e4126590c38795bc') in 0.000504 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.439488 seconds.
+  path: Assets/Prefabs/Canvas.prefab
+  artifactKey: Guid(48ea371236a350948a07335ea1196e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Canvas.prefab using Guid(48ea371236a350948a07335ea1196e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd92e78381c9053c2fcb9c8a87d8a6b67') in 0.043917 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 71
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.522 seconds
+Refreshing native plugins compatible for Editor in 6.07 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.641 seconds
+Domain Reload Profiling: 2160ms
+	BeginReloadAssembly (173ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (46ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (265ms)
+		LoadAssemblies (326ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (22ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1641ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (647ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (99ms)
+			ProcessInitializeOnLoadAttributes (437ms)
+			ProcessInitializeOnLoadMethodAttributes (80ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 7.72 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5933 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (322.5 KB). Loaded Objects now: 6596.
+Memory consumption went from 219.6 MB to 219.3 MB.
+Total: 5.072300 ms (FindLiveObjects: 0.494600 ms CreateObjectMapping: 0.519900 ms MarkObjects: 3.894100 ms  DeleteObjects: 0.162400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 116.945615 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Abyss/_0020_abyss_02.png
+  artifactKey: Guid(00732a4781cda0d41a6f5c28cd028a5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Abyss/_0020_abyss_02.png using Guid(00732a4781cda0d41a6f5c28cd028a5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4691d217503946456f7fe399ad4a1b03') in 0.087617 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Abyss/_0033_abyss_02.png
+  artifactKey: Guid(3908fb0bff0362d4eac44fc3991f346b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Abyss/_0033_abyss_02.png using Guid(3908fb0bff0362d4eac44fc3991f346b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ed72a3873d1af26bca0fb5244a18eaf') in 0.019710 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Abyss/_0042_nail4.png
+  artifactKey: Guid(2bd110afed4cc3b4da16bfad45d3827d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Abyss/_0042_nail4.png using Guid(2bd110afed4cc3b4da16bfad45d3827d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0ce7f4df6fee400965149e764b77600') in 0.031396 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Abyss/_0043_abyss_02.png
+  artifactKey: Guid(32f5846f19b2bbf49baffc9ec33b2cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Abyss/_0043_abyss_02.png using Guid(32f5846f19b2bbf49baffc9ec33b2cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db99b5a18cd26f9595c801e065aa382c') in 0.087227 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Abyss/_0039_abyss_02.png
+  artifactKey: Guid(94d1730645903e74190713c020c546ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Abyss/_0039_abyss_02.png using Guid(94d1730645903e74190713c020c546ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8564628ffe9793638eb556d74df9914') in 0.021175 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/City of Tears/_0025_city_break.png
+  artifactKey: Guid(d87c3ba4b2906f340a7655c0f264b05e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/City of Tears/_0025_city_break.png using Guid(d87c3ba4b2906f340a7655c0f264b05e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61ca61563025d1a6cb8a6b625a661007') in 0.021677 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/City of Tears/_0028_city_break.png
+  artifactKey: Guid(dcc448a5cd8bb8844a9a5686e1432850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/City of Tears/_0028_city_break.png using Guid(dcc448a5cd8bb8844a9a5686e1432850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e7924f19b2e122e1594123e4d52058d') in 0.019114 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/City of Tears/_0081_fountain.png
+  artifactKey: Guid(0d83ed3764c0d434db58ac04644987c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/City of Tears/_0081_fountain.png using Guid(0d83ed3764c0d434db58ac04644987c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dc8c1bf02b42f9e3f29807280c7e1d4') in 0.019140 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/City of Tears/_0029_city_break.png
+  artifactKey: Guid(8c9835164fbaf9e4a97194cd66c1bf5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/City of Tears/_0029_city_break.png using Guid(8c9835164fbaf9e4a97194cd66c1bf5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12a177c0442fe6fbe1dab1dda784ca4b') in 0.018849 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/City of Tears/_0024_city_break.png
+  artifactKey: Guid(2e482bfb6c83d58478115ea1d87bc6c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/City of Tears/_0024_city_break.png using Guid(2e482bfb6c83d58478115ea1d87bc6c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1288ab5c6cb71ec24cff828056de0ee') in 0.023335 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Abyss/_0025_abyss_02.png
+  artifactKey: Guid(9c12bf39f8aa02b4183f0fc91f03cbd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Abyss/_0025_abyss_02.png using Guid(9c12bf39f8aa02b4183f0fc91f03cbd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdb081b49fb03c071cd7261d06d700d6') in 0.060650 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/City of Tears/amelitia_flowers_0004_4.png
+  artifactKey: Guid(6bc1aed6601f2a749a48d33ad2e2451a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/City of Tears/amelitia_flowers_0004_4.png using Guid(6bc1aed6601f2a749a48d33ad2e2451a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '116bdedbfeacfd7a5eda19f48cdfa520') in 0.030814 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/conveyor_base_01.png
+  artifactKey: Guid(2499282f27a65a6409475ef078b41fa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/conveyor_base_01.png using Guid(2499282f27a65a6409475ef078b41fa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '052282046efc033a12825f96f39c6d92') in 0.025330 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/conveyor_belt0004.png
+  artifactKey: Guid(1ab3963b056c88a41b0029ad97d03a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/conveyor_belt0004.png using Guid(1ab3963b056c88a41b0029ad97d03a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8532163804b1352c52633baafbcc3dc') in 0.020059 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/conveyor_belt0002.png
+  artifactKey: Guid(1168b3e7fb6914a4c9979703f5914391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/conveyor_belt0002.png using Guid(1168b3e7fb6914a4c9979703f5914391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71865dae165d06644e80316845325be7') in 0.023383 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/conveyor_cog_010003.png
+  artifactKey: Guid(5e4e74f19366f2846901178e90d2656b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/conveyor_cog_010003.png using Guid(5e4e74f19366f2846901178e90d2656b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ccf7503db2c782a46540651536d3b87') in 0.026146 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/conveyor_belt_simple0003.png
+  artifactKey: Guid(226be8fa9f33c3d458c9332aa0e1c712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/conveyor_belt_simple0003.png using Guid(226be8fa9f33c3d458c9332aa0e1c712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '929f212b3f1b257f7e2705a35e93621b') in 0.020353 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/conveyor_belt0006.png
+  artifactKey: Guid(90d980c0319242b48b7a990032b1c2b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/conveyor_belt0006.png using Guid(90d980c0319242b48b7a990032b1c2b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2fabc27defba58c8e3ffea60ffde46a') in 0.020350 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/break_candles_0007_Layer-5.png
+  artifactKey: Guid(53de2f63fb1d7974b898299175369eff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/break_candles_0007_Layer-5.png using Guid(53de2f63fb1d7974b898299175369eff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95ca544731e0bdb9ced14ffed5926f89') in 0.017781 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/bretta_curtain_04.png
+  artifactKey: Guid(63bee4a0723c8ea4b9bc972b0ef52625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/bretta_curtain_04.png using Guid(63bee4a0723c8ea4b9bc972b0ef52625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29616b440076079ff887f999de090ace') in 0.017234 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/Hallownest_Gate_0005_15.png
+  artifactKey: Guid(48f849c157b0b4c4e8f66c70c23f7579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/Hallownest_Gate_0005_15.png using Guid(48f849c157b0b4c4e8f66c70c23f7579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97c25fd81a6077a9ad5524be3462ceb2') in 0.021245 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/basement_lid.png
+  artifactKey: Guid(97a9cacbf66622641a719f60efca7cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/basement_lid.png using Guid(97a9cacbf66622641a719f60efca7cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23f5d6cc5b7bce716c12390a81fc5b29') in 0.023373 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/bretta_hug_pillow.png
+  artifactKey: Guid(a3b85d44067b4634683533678238fd4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/bretta_hug_pillow.png using Guid(a3b85d44067b4634683533678238fd4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7890a2010479c7e02d498495689dc876') in 0.026674 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/City of Tears/antique dealer door.png
+  artifactKey: Guid(9615d42d9f654024186a639afaaf2beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/City of Tears/antique dealer door.png using Guid(9615d42d9f654024186a639afaaf2beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c694b9b0edd332755bc9b33703fdeebd') in 0.027655 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/collapser_highway1.png
+  artifactKey: Guid(d21b30234fcc0654cb580aa7dfc59313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/collapser_highway1.png using Guid(d21b30234fcc0654cb580aa7dfc59313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eef3b7db544482d01b0ad1473d6f01a8') in 0.022766 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/conveyor_base_03.png
+  artifactKey: Guid(2b6cd5fe87ec2564aaaa4f64fe5ba75f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/conveyor_base_03.png using Guid(2b6cd5fe87ec2564aaaa4f64fe5ba75f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '624dea22a460a84b7e8d94e9cea1643e') in 0.024233 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Abyss/_0041_abyss_02.png
+  artifactKey: Guid(084f67a8d37ee5c45ad5214370bc2e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Abyss/_0041_abyss_02.png using Guid(084f67a8d37ee5c45ad5214370bc2e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d89f3c38d9f116af274a331da9a3f72') in 0.025823 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/City of Tears/antique_r_0003_a.png
+  artifactKey: Guid(b7eca882620d07140b7349cd1666cc83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/City of Tears/antique_r_0003_a.png using Guid(b7eca882620d07140b7349cd1666cc83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9efdda835b5eba5fb6d879bd00c9ebe3') in 0.022707 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/2189-0@2x.png
+  artifactKey: Guid(3e6652bcb35d4664d80ac439b71a316b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/2189-0@2x.png using Guid(3e6652bcb35d4664d80ac439b71a316b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6211059530f0222f5498649db77f94ab') in 0.020898 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/brk_Crystal4.png
+  artifactKey: Guid(3d01ce89a1db9e1409c385750e313f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/brk_Crystal4.png using Guid(3d01ce89a1db9e1409c385750e313f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd410aa30aba8b23c3b592919c8a86b77') in 0.024896 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/bretta_fader.png
+  artifactKey: Guid(492a9d7791047ee41b3ec70a5aa97452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/bretta_fader.png using Guid(492a9d7791047ee41b3ec70a5aa97452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7afef7713bdc365a1fc3237c806dd676') in 0.024452 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/City of Tears/amelitia_flowers_long_vine.png
+  artifactKey: Guid(9b0fa3f9170f31a4ba178b6d3931b441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/City of Tears/amelitia_flowers_long_vine.png using Guid(9b0fa3f9170f31a4ba178b6d3931b441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '732a9a84cc569190106f561137f37474') in 0.015637 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/bretta_curtain_01.png
+  artifactKey: Guid(baf87d1632e38a04a94a40cf3ad21f78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/bretta_curtain_01.png using Guid(baf87d1632e38a04a94a40cf3ad21f78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1653a8a054a80080489ba0003e6990d9') in 0.022618 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/bretta_0006_01.png
+  artifactKey: Guid(3ede7ac83b7a38c47a1c794a74449923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/bretta_0006_01.png using Guid(3ede7ac83b7a38c47a1c794a74449923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fe0949b9c37455d0131f6571a88eb8e') in 0.023311 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/City of Tears/_0031_city_break.png
+  artifactKey: Guid(65529f85d5b5d45469c6682b49d5d31a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/City of Tears/_0031_city_break.png using Guid(65529f85d5b5d45469c6682b49d5d31a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2258df843281af4726a2fce66fc82d1') in 0.019917 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/conveyor_cog_010002.png
+  artifactKey: Guid(12f57474d2833ed47a3d42c4dba7b1ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/conveyor_cog_010002.png using Guid(12f57474d2833ed47a3d42c4dba7b1ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de890d243750d76660ee4029dfb0e1b0') in 0.020798 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/central_elev.png
+  artifactKey: Guid(c0f7b1760ededf5428754a48710f185e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/central_elev.png using Guid(c0f7b1760ededf5428754a48710f185e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f729fb80082512090b7b27acccbb164f') in 0.023936 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/conveyor_belt_simple0001.png
+  artifactKey: Guid(9ee28e32559cdb6468d82301f1e44e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/conveyor_belt_simple0001.png using Guid(9ee28e32559cdb6468d82301f1e44e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28ecc69da02585547c184a0ac1eb40e7') in 0.020992 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/break_candles_0001_Layer-9.png
+  artifactKey: Guid(12a458987c87f074db34aac5770273de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/break_candles_0001_Layer-9.png using Guid(12a458987c87f074db34aac5770273de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c56bb4636ccbc0d99f918fa3f02a5176') in 0.020055 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/bretta_zote_wall.png
+  artifactKey: Guid(04adbdaa196dd8647ac088bdd65267f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/bretta_zote_wall.png using Guid(04adbdaa196dd8647ac088bdd65267f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf66b72147398a387206aac49729ed97') in 0.021204 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Abyss/_0028_abyss_02.png
+  artifactKey: Guid(7e44dd3f0928fc046b669476a47536d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Abyss/_0028_abyss_02.png using Guid(7e44dd3f0928fc046b669476a47536d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99e4aff2b95039266530d01523cc4fd7') in 0.030436 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/City of Tears/antique_r_0000_a.png
+  artifactKey: Guid(59b6053618ffa5c4486a99075f046ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/City of Tears/antique_r_0000_a.png using Guid(59b6053618ffa5c4486a99075f046ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '445e776deace89a63896a35f9aa016d4') in 0.023173 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/atlas0 #26003.png
+  artifactKey: Guid(2643ec586d757ca46aa7e1c1de982f81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/atlas0 #26003.png using Guid(2643ec586d757ca46aa7e1c1de982f81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73c9f2699053277a30dc9b56d1d689c2') in 0.027122 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/City of Tears/amelitia_flowers_0001_7.png
+  artifactKey: Guid(3a352896de4308843b876ce8b1ebc34c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/City of Tears/amelitia_flowers_0001_7.png using Guid(3a352896de4308843b876ce8b1ebc34c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3bd15a9a00a3cb4290680e8afa442a6') in 0.021249 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/City of Tears/_0030_city_break.png
+  artifactKey: Guid(fad32d3723fcd1c47a54c01bd54b4cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/City of Tears/_0030_city_break.png using Guid(fad32d3723fcd1c47a54c01bd54b4cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5afe53cc8231580ddd8800d6abc90c66') in 0.025822 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/bretta_0000_03.png
+  artifactKey: Guid(84168c893485cde469e58d8b97d69b61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/bretta_0000_03.png using Guid(84168c893485cde469e58d8b97d69b61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f96c348eb9324aea28eb3e91971bd061') in 0.024632 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/bretta_0001_lamp.png
+  artifactKey: Guid(8cc52e4816e4abf4c8a259af0bb27b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/bretta_0001_lamp.png using Guid(8cc52e4816e4abf4c8a259af0bb27b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69a96e98834619ae647a44fd35c8c2aa') in 0.020540 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/bretta_curtain_02.png
+  artifactKey: Guid(bf37284bc3798024ca60e7f62034f906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/bretta_curtain_02.png using Guid(bf37284bc3798024ca60e7f62034f906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23d413e0c384dd28b2f6a162f871514f') in 0.021056 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Abyss/_0043_abyss.png
+  artifactKey: Guid(046fbadc8ab38b042aa3104c27cfd393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Abyss/_0043_abyss.png using Guid(046fbadc8ab38b042aa3104c27cfd393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '148fe014695c057650ef7df7d56530db') in 0.018635 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Godhome/Chain_selectall_flash0003.png
+  artifactKey: Guid(1ef35858be0da4a4987e57b148cd90bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Godhome/Chain_selectall_flash0003.png using Guid(1ef35858be0da4a4987e57b148cd90bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aa1bdfbf6b1bc9ba139f13e506b4fd5') in 0.024021 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Godhome/gg_aerial.png
+  artifactKey: Guid(2a57d8196e643ab4b89c53385c9a9027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Godhome/gg_aerial.png using Guid(2a57d8196e643ab4b89c53385c9a9027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f68fc39b1a6634fd0f3a785b77ec21e') in 0.023142 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Godhome/Chain_selectall_flash0002.png
+  artifactKey: Guid(2169aca6a0d555f49ab8a76f63373c38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Godhome/Chain_selectall_flash0002.png using Guid(2169aca6a0d555f49ab8a76f63373c38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbe5c8ef288b2954d67c85c662641f5a') in 0.022129 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Godhome/atlas0 #408013.png
+  artifactKey: Guid(d96610d0424a7a24c93401264653faeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Godhome/atlas0 #408013.png using Guid(d96610d0424a7a24c93401264653faeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b5f343ee910f5bb55bdc670366aa422') in 0.025358 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Godhome/gg_4_cage_0005_3.png
+  artifactKey: Guid(6cf9a16983834494982dea1ebd883197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Godhome/gg_4_cage_0005_3.png using Guid(6cf9a16983834494982dea1ebd883197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e60b7207e271f608c3b2915195bf9607') in 0.024606 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Godhome/blue_door_extras_0002_1.png
+  artifactKey: Guid(b2eb72b362f54294298cd7ceb1e3e6a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Godhome/blue_door_extras_0002_1.png using Guid(b2eb72b362f54294298cd7ceb1e3e6a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4432baa48d85cbc9c5322a659520551f') in 0.023030 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Godhome/gg_4_cage_0006_4.png
+  artifactKey: Guid(bce220f71ca43854bab2a1d7a33c4b82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Godhome/gg_4_cage_0006_4.png using Guid(bce220f71ca43854bab2a1d7a33c4b82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbc1587b6df3f0bd98865c7ef343f5df') in 0.023665 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0065_Layer-293 #129026.png
+  artifactKey: Guid(c90aad3d4f2b751418dfaf7f573a814c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0065_Layer-293 #129026.png using Guid(c90aad3d4f2b751418dfaf7f573a814c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48d02bd90a2539b4ec262c53cc67430d') in 0.021192 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0023_Layer-325.png
+  artifactKey: Guid(2389873e364da054c8ef8ebff0bec987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0023_Layer-325.png using Guid(2389873e364da054c8ef8ebff0bec987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94792fa8f15df94a7f71defa48c3d673') in 0.025840 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0044_Layer-303.png
+  artifactKey: Guid(b0a75607e3eb60547a3dacb19f57bea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0044_Layer-303.png using Guid(b0a75607e3eb60547a3dacb19f57bea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69512017d2da2c06ff8097a15dfa7b8a') in 0.022774 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Greenpath/floor_layered_0002_02_green.png
+  artifactKey: Guid(dbc9e1cafee60074fa9b301e3319675e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Greenpath/floor_layered_0002_02_green.png using Guid(dbc9e1cafee60074fa9b301e3319675e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d6330b721b5dd663888d8e3b710be36') in 0.019098 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0042_Layer-306.png
+  artifactKey: Guid(1969621323bdd3c4391675203f13fb60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0042_Layer-306.png using Guid(1969621323bdd3c4391675203f13fb60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5fd5a29109cd74cd0811b553ecc375a') in 0.026109 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Hive/hive_0001_break_pillar_base02.png
+  artifactKey: Guid(28d5ee860af2dd24d9bb18d22a0c1118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Hive/hive_0001_break_pillar_base02.png using Guid(28d5ee860af2dd24d9bb18d22a0c1118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '621e7f1d96482fb4add7526d8fea6967') in 0.019280 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Hive/Hive_Ext_0002_hive_ext_tunnel_01.png
+  artifactKey: Guid(98d19b471bebe564ab965651d4e32297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Hive/Hive_Ext_0002_hive_ext_tunnel_01.png using Guid(98d19b471bebe564ab965651d4e32297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bbb64b8a7ff2d416647c2d3c5d59c3a') in 0.020802 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Hive/hive_charm_plinth_0003_2.png
+  artifactKey: Guid(c60d6ff868aad094ba4ecc5ea8fa810f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Hive/hive_charm_plinth_0003_2.png using Guid(c60d6ff868aad094ba4ecc5ea8fa810f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '630e366d58db245d77e3f476090c0583') in 0.024749 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Hive/ext_0002_hive_break_1.png
+  artifactKey: Guid(cae2bd507c37f2f4cba8975006074020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Hive/ext_0002_hive_break_1.png using Guid(cae2bd507c37f2f4cba8975006074020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '533633f359c2a9425b2d5cc402a567a2') in 0.024004 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Hive/ancient_wall_pieces_0002_a_hive.png
+  artifactKey: Guid(371c9232d4c987f4b84c4b8e7c0a2042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Hive/ancient_wall_pieces_0002_a_hive.png using Guid(371c9232d4c987f4b84c4b8e7c0a2042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '464649773ea7cf5fce43e33e33bd9e73') in 0.022896 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0046_Layer-301.png
+  artifactKey: Guid(70f8f78fd557ba44eab43b41776e7ccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0046_Layer-301.png using Guid(70f8f78fd557ba44eab43b41776e7ccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc2e6ad6b4a0d914cde5227cdc253a95') in 0.024294 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Hive/hive_extras_living_0008_Layer-28_base.png
+  artifactKey: Guid(360abfb451ed6924e81b364f4a175093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Hive/hive_extras_living_0008_Layer-28_base.png using Guid(360abfb451ed6924e81b364f4a175093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a5e0df164baa5d719e8cf34aaf432dc') in 0.022213 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliff_mid_wall.png
+  artifactKey: Guid(8c0e1498af2929f4db67bb5aad15cc55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliff_mid_wall.png using Guid(8c0e1498af2929f4db67bb5aad15cc55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5669381d2bbccd50b8ce15bb57a7b9e1') in 0.021791 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_03_0000_a.png
+  artifactKey: Guid(a33379e4cc35cb3489340ea6618d6693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_03_0000_a.png using Guid(a33379e4cc35cb3489340ea6618d6693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f76f0f684a268bf3c94f097f3addda67') in 0.021775 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_05_0002_a.png
+  artifactKey: Guid(a9ac8251a5d203542bbc5a032b98bd08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_05_0002_a.png using Guid(a9ac8251a5d203542bbc5a032b98bd08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cb375740db3ede905ad5c828cb98467') in 0.022783 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_04_0003_a.png
+  artifactKey: Guid(d6c7c389ee126844cb2a2e5dd63da9b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_04_0003_a.png using Guid(d6c7c389ee126844cb2a2e5dd63da9b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3827809aa6f7e4c02929a60166334de') in 0.022265 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_0002_a.png
+  artifactKey: Guid(34c24bf913353684f9fd34f1de3a94e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_0002_a.png using Guid(34c24bf913353684f9fd34f1de3a94e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1f303120caecd047928d0cccc103301') in 0.024861 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Greenpath/floor_layered_0001_03_green.png
+  artifactKey: Guid(adec70a5fc8d915499d7d55f44e3f190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Greenpath/floor_layered_0001_03_green.png using Guid(adec70a5fc8d915499d7d55f44e3f190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f083247c042f996dc439c70f121e658') in 0.020355 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0065_Layer-293 #624026.png
+  artifactKey: Guid(f5218daed0bb7d84bb15e241ab383a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0065_Layer-293 #624026.png using Guid(f5218daed0bb7d84bb15e241ab383a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90e642d70a0a8b9636daf916c3da26f2') in 0.019522 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Hive/hive_black_solid.png
+  artifactKey: Guid(41d41954032f7514c8ce8fae1bd2808a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Hive/hive_black_solid.png using Guid(41d41954032f7514c8ce8fae1bd2808a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9233119b5cad408610dafdc7d222612a') in 0.021007 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_02_0001_a.png
+  artifactKey: Guid(f301a5d625378a64da0c32ad1ac4ba7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_02_0001_a.png using Guid(f301a5d625378a64da0c32ad1ac4ba7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef9fa3efc0f812f7dddbdf7fb5f8140b') in 0.023741 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_02_0002_a.png
+  artifactKey: Guid(a56ced9cd161d1f4d928e44694cb8ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_02_0002_a.png using Guid(a56ced9cd161d1f4d928e44694cb8ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18b94ff08c894911ad21b77b9c42ca8f') in 0.024328 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliff_mask.png
+  artifactKey: Guid(f85c0fa6bcfbcb9418674db5b8fb2391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliff_mask.png using Guid(f85c0fa6bcfbcb9418674db5b8fb2391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '052886fb9cfe9897ff9bd124cfa9a75c') in 0.021430 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Greenpath/floor_layered_0000_04_green.png
+  artifactKey: Guid(9169fc795c0585849b8e1f1ff370b6d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Greenpath/floor_layered_0000_04_green.png using Guid(9169fc795c0585849b8e1f1ff370b6d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68c065388f66d27981ffe09334248f2a') in 0.022804 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_03_0004_a.png
+  artifactKey: Guid(fccca21b48401f3498174058443e8fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_03_0004_a.png using Guid(fccca21b48401f3498174058443e8fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c618927c50ddfbf89ea76d2b10e3d99a') in 0.022647 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Hive/ext_0003_hive_break_back.png
+  artifactKey: Guid(3a796412b0e000c41960766593e24daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Hive/ext_0003_hive_break_back.png using Guid(3a796412b0e000c41960766593e24daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dd9247b2577ea0bab2cebf12b076805') in 0.025872 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_02_0005_a.png
+  artifactKey: Guid(6e39a64264e84d944a1581c4e0ce9860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_02_0005_a.png using Guid(6e39a64264e84d944a1581c4e0ce9860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '556c9b9a7441cb325bd424fb5e85f618') in 0.027874 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_03_0001_a.png
+  artifactKey: Guid(2579adfb6bfa345418c356b073733dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_03_0001_a.png using Guid(2579adfb6bfa345418c356b073733dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd525ba6939b1c313335cc2294e2a65ad') in 0.026079 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Hive/hive_big_roof.png
+  artifactKey: Guid(510439455a73eb146a4aa720f3f4c960) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Hive/hive_big_roof.png using Guid(510439455a73eb146a4aa720f3f4c960) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '448a27e9a310b4b8da4420b295080c16') in 0.021346 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Hive/ext_0001_hive_break_2.png
+  artifactKey: Guid(e8ccc00127da95041a9fad9fe08b2639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Hive/ext_0001_hive_break_2.png using Guid(e8ccc00127da95041a9fad9fe08b2639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a3e0c424553b547153db0641d81066e') in 0.023543 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0064_Layer-294_lamp_break.png
+  artifactKey: Guid(b256ae3f236885a44a23d172c9e952b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0064_Layer-294_lamp_break.png using Guid(b256ae3f236885a44a23d172c9e952b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9cd042d4588019b9e518920f41055ae') in 0.022550 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0064_Layer-294.png
+  artifactKey: Guid(f6aea01f991d7af40b87a5da45db6e62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0064_Layer-294.png using Guid(f6aea01f991d7af40b87a5da45db6e62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f29eab168d5fc26731ec62937f6af16') in 0.018078 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_04_0000_a.png
+  artifactKey: Guid(e3c3930ff3d85f64f82ca33db0140368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_04_0000_a.png using Guid(e3c3930ff3d85f64f82ca33db0140368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e260a8a08a0e36e29907c4a28643fa1') in 0.028660 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0020_Layer-328.png
+  artifactKey: Guid(22565eea9ab8e1a44963ea28348d0cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0020_Layer-328.png using Guid(22565eea9ab8e1a44963ea28348d0cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b2006a79b0f45bad86311ae8dcc903a') in 0.026402 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_0003_a.png
+  artifactKey: Guid(3c54a01131c635d42b0247a28807f505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_0003_a.png using Guid(3c54a01131c635d42b0247a28807f505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d446e587bd3d9b2a2fe4201040ad72c') in 0.024724 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Hive/hive_charm_plinth_0000_4.png
+  artifactKey: Guid(c55d58185e3d82b4a94776203436d30f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Hive/hive_charm_plinth_0000_4.png using Guid(c55d58185e3d82b4a94776203436d30f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9d70b645ad94e07d301b5e93a25448a') in 0.018235 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_06_0000_a.png
+  artifactKey: Guid(4d107d4ea424dfc40b38212065fa2c5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_06_0000_a.png using Guid(4d107d4ea424dfc40b38212065fa2c5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f069398c66e81b95592d20b3b8d6229d') in 0.023168 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_05_0000_a.png
+  artifactKey: Guid(f135330d07986b9429732f92e7630c84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_05_0000_a.png using Guid(f135330d07986b9429732f92e7630c84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d0c1979f54eaf43c2ee4437dec03e8f') in 0.022702 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/City of Tears/_0032_city_break.png
+  artifactKey: Guid(3d83ff34c9eb7724ea0e5c37a5052bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/City of Tears/_0032_city_break.png using Guid(3d83ff34c9eb7724ea0e5c37a5052bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b12539e98a8aae9a14dc864717906f92') in 0.022317 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/bretta_door_ext.png
+  artifactKey: Guid(4a414be4d28bad340b7061c2d5f3441a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/bretta_door_ext.png using Guid(4a414be4d28bad340b7061c2d5f3441a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61b31a7d4ed1dcedbaf7b6653b81e3cf') in 0.018763 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Hive/hive_0003_break_pillar_01.png
+  artifactKey: Guid(0d0a2944da71fe94e9d0ce326d65c97b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Hive/hive_0003_break_pillar_01.png using Guid(0d0a2944da71fe94e9d0ce326d65c97b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd440483d498df4e6f368643670c8f157') in 0.020239 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0071_Layer-277.png
+  artifactKey: Guid(cba36517f0489424d85012a45534265c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0071_Layer-277.png using Guid(cba36517f0489424d85012a45534265c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db458e29067fbee96211f4ee99dfaaa0') in 0.019627 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Godhome/atlas0 #423018.png
+  artifactKey: Guid(0b1304e70974d324b8cc0ba33ba95f66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Godhome/atlas0 #423018.png using Guid(0b1304e70974d324b8cc0ba33ba95f66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91f2bd4a17abfea05790a2a6e8a6f9d0') in 0.019074 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/break_candles_0000_Layer-8.png
+  artifactKey: Guid(8fe9c8b319e99964296bcf38f5ac4fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/break_candles_0000_Layer-8.png using Guid(8fe9c8b319e99964296bcf38f5ac4fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '464cc89be178cacea77ccd4435980fde') in 0.017931 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/Bretta_pedestals_0002_1.png
+  artifactKey: Guid(21672ed434f04f6479eb6e4d5956cf3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/Bretta_pedestals_0002_1.png using Guid(21672ed434f04f6479eb6e4d5956cf3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2674a414e7d9868094cb92e57602472c') in 0.020052 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliff_mid_wall_main_0002_1.png
+  artifactKey: Guid(33a6123113b4a2a49b3dec2ad322034c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliff_mid_wall_main_0002_1.png using Guid(33a6123113b4a2a49b3dec2ad322034c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c585948acce167f206235406716c08c') in 0.022736 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/City of Tears/_0022_city_break.png
+  artifactKey: Guid(6f99c152df72ec54fae73012c7ee566c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/City of Tears/_0022_city_break.png using Guid(6f99c152df72ec54fae73012c7ee566c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eb565bebe6ec1cc390e71c6f909c717') in 0.024738 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Hive/ext_0000_hive_break_3.png
+  artifactKey: Guid(7cc954fc28149bf4f8e35b73513ea1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Hive/ext_0000_hive_break_3.png using Guid(7cc954fc28149bf4f8e35b73513ea1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a36c40d6c51ee8cdca3a266e448fe236') in 0.021556 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Greenpath/back_mid_wall_no_eyes_temple.png
+  artifactKey: Guid(de875c314b874ec44a90776778bc8035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Greenpath/back_mid_wall_no_eyes_temple.png using Guid(de875c314b874ec44a90776778bc8035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fab16f117be27496defb98a7ce613b29') in 0.021715 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Hive/Hive_break_base_01_0002_2.png
+  artifactKey: Guid(5641b9e249e631c4d9c08774381b449a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Hive/Hive_break_base_01_0002_2.png using Guid(5641b9e249e631c4d9c08774381b449a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13363c934c7f60b381703820b22f339b') in 0.020644 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_06_0001_a.png
+  artifactKey: Guid(7d791b65da91f0d4392057e3b61085c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_06_0001_a.png using Guid(7d791b65da91f0d4392057e3b61085c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9fee573b9e5e1469eb8a2977e3ae115') in 0.021212 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Abyss/_0030_abyss_02.png
+  artifactKey: Guid(29ad70a775f2bc14a86edddffd136df5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Abyss/_0030_abyss_02.png using Guid(29ad70a775f2bc14a86edddffd136df5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8744b90723a5efde538ce0d57c96ae8f') in 0.022278 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_06_0003_a.png
+  artifactKey: Guid(878034c7e10d9d044bc4d80a83583560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_06_0003_a.png using Guid(878034c7e10d9d044bc4d80a83583560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a6ea940e3f11cc077d320aef0efbd8b') in 0.019872 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_02_0000_a.png
+  artifactKey: Guid(771fac9cd60ee2a46bf834b20f86f526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_02_0000_a.png using Guid(771fac9cd60ee2a46bf834b20f86f526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fcb8fc6f3e011adc3a30536d8824389') in 0.022353 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Hive/hive_charm_plinth_0001_3.png
+  artifactKey: Guid(066067a92a341da4d9c5fe75edf92579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Hive/hive_charm_plinth_0001_3.png using Guid(066067a92a341da4d9c5fe75edf92579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '044efcf2780bf41420591b5a17f692eb') in 0.021171 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/break_candles_0002_Layer-3.png
+  artifactKey: Guid(1fa8ce2b41c0dfb47bf9a2ddd0f867c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/break_candles_0002_Layer-3.png using Guid(1fa8ce2b41c0dfb47bf9a2ddd0f867c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ed9f277a746908c8799a5731532aadc') in 0.021746 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/bretta_0004_poster_02.png
+  artifactKey: Guid(2f107adedf74392499e380aa4d1eee09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/bretta_0004_poster_02.png using Guid(2f107adedf74392499e380aa4d1eee09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2024da9853cacce97db652b39fce833') in 0.021936 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Hive/hive_extras_living_0004_Layer-24.png
+  artifactKey: Guid(0e5096b0e88273a4cb6eb899e21a0929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Hive/hive_extras_living_0004_Layer-24.png using Guid(0e5096b0e88273a4cb6eb899e21a0929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b83aee72bfbb72600eb4f7c6e143d73') in 0.026571 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0065_Layer-293.png
+  artifactKey: Guid(df65e8d876e00b640949b912e531f31b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0065_Layer-293.png using Guid(df65e8d876e00b640949b912e531f31b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b88375c1a4cf93e2c8429ec85bd170f8') in 0.022028 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/City of Tears/amelitia_flowers_0002_6.png
+  artifactKey: Guid(4bb33998f83953440b58a9375becabf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/City of Tears/amelitia_flowers_0002_6.png using Guid(4bb33998f83953440b58a9375becabf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e72b97db38a898231b2cf37cd741418') in 0.022632 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Hive/Hive_Ext_0003_hive_ext_tunnel_02.png
+  artifactKey: Guid(783cb81ab3c97574eb1b1559d132c982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Hive/Hive_Ext_0003_hive_ext_tunnel_02.png using Guid(783cb81ab3c97574eb1b1559d132c982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cfeb6f205aabfa9a9dec255470ebb9a') in 0.022153 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0070_Layer-278 #63122.png
+  artifactKey: Guid(b2da5d8e80d7e764ea6743c0134b5f37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0070_Layer-278 #63122.png using Guid(b2da5d8e80d7e764ea6743c0134b5f37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '853547c8132f2e2ed942a9d54e077186') in 0.019486 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0071_Layer-277 #129024.png
+  artifactKey: Guid(29aac6c76ed401c47b95ffe7bbd8d8dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0071_Layer-277 #129024.png using Guid(29aac6c76ed401c47b95ffe7bbd8d8dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b297a502b75eddf5ee5dcad80cde758c') in 0.019249 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Hive/hive_Break_wall_01.png
+  artifactKey: Guid(f15c62d66210a5a40b8a052ff5b27e3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Hive/hive_Break_wall_01.png using Guid(f15c62d66210a5a40b8a052ff5b27e3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '090aa46fa1225e9639137873f6ffb40f') in 0.025904 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/1833-1@2x.png
+  artifactKey: Guid(58751fc8ab3fb5c469023efe9647a3aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/1833-1@2x.png using Guid(58751fc8ab3fb5c469023efe9647a3aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dcfd49df2e1cc7c26fbff3b5360297f') in 0.029887 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0045_Layer-302.png
+  artifactKey: Guid(ab6ccd5166facdb42aae47c736277e76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0045_Layer-302.png using Guid(ab6ccd5166facdb42aae47c736277e76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a75bf206e33cfa5db578d09b42639b7b') in 0.020172 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0069_Layer-279_base.png
+  artifactKey: Guid(e4bf3a474b0ac0a48942418320832bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0069_Layer-279_base.png using Guid(e4bf3a474b0ac0a48942418320832bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16f838f2cb202c3850d8f7bbb5c3aac6') in 0.023643 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0068_Layer-280.png
+  artifactKey: Guid(46b43fc0985618f4ea7a87cb7921b54f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0068_Layer-280.png using Guid(46b43fc0985618f4ea7a87cb7921b54f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1233bac823a38ffa762e85cb05312650') in 0.021425 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Godhome/gg_4_cage_0000_7.png
+  artifactKey: Guid(8a4993a2371830a4fac57795b365c599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Godhome/gg_4_cage_0000_7.png using Guid(8a4993a2371830a4fac57795b365c599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df0f4b4762c5319c14c5f481f3a7bf7d') in 0.023886 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Godhome/blue_door_extras_0001_2.png
+  artifactKey: Guid(23d89a5589d852443aee04a31316998c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Godhome/blue_door_extras_0001_2.png using Guid(23d89a5589d852443aee04a31316998c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '044946f228bba011ef4e4cae0c18dec8') in 0.025921 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliff_mid_wall_main_0001_2.png
+  artifactKey: Guid(5ebdfa0ca0d1d214e94caaa0a84566aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliff_mid_wall_main_0001_2.png using Guid(5ebdfa0ca0d1d214e94caaa0a84566aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d04b9701aceadd4d14ce5f35e00a3a9') in 0.022293 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Hive/hive_extra_book.png
+  artifactKey: Guid(95677820f151ab747975e1f2439c75bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Hive/hive_extra_book.png using Guid(95677820f151ab747975e1f2439c75bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '975356e6a07eb3f590c5c433e5018bf1') in 0.021241 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Godhome/GG_bench_metal_0000_2.png
+  artifactKey: Guid(58f56b94bcc3d524f82a540224442779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Godhome/GG_bench_metal_0000_2.png using Guid(58f56b94bcc3d524f82a540224442779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26c2ec64f18469ae0d81ad72ef75df4e') in 0.024703 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Abyss/_0027_abyss_02.png
+  artifactKey: Guid(ccba270fb347b864c877a3df8890fa16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Abyss/_0027_abyss_02.png using Guid(ccba270fb347b864c877a3df8890fa16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0cac20398ef965c14ffca07736c91c1') in 0.025040 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/City of Tears/_0082_fountain.png
+  artifactKey: Guid(aad528604f7df35488ce3cefb1311bf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/City of Tears/_0082_fountain.png using Guid(aad528604f7df35488ce3cefb1311bf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b70f08c98b68e81e926bb929ebdbe4eb') in 0.020772 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Hive/hive_extras_living_0008_Layer-28.png
+  artifactKey: Guid(8e92608102998df4687dd2cd3c0958f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Hive/hive_extras_living_0008_Layer-28.png using Guid(8e92608102998df4687dd2cd3c0958f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83c68fac4e2ff692d72ddd5cf5ff83b6') in 0.019895 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/brk_Crystal3.png
+  artifactKey: Guid(164efe712bbf8a849b9648ae5b1cc613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Crystal Peak/brk_Crystal3.png using Guid(164efe712bbf8a849b9648ae5b1cc613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0525a9cf27b7d6fd70ef51ff883fb43') in 0.021326 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/bretta_0003_Layer-1.png
+  artifactKey: Guid(90e57deccae00ea4992ddbaa91116c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Dirtmouth/bretta_0003_Layer-1.png using Guid(90e57deccae00ea4992ddbaa91116c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b175604ed4feb8ce9b8555afe72e45fc') in 0.018360 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_03_0003_a.png
+  artifactKey: Guid(c5aa77c57bc778d47925a5d7c8e9a966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Howling Cliffs/cliffs_layered_03_0003_a.png using Guid(c5aa77c57bc778d47925a5d7c8e9a966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc61f63a70a266b5ba3cc5204ff6b67f') in 0.027364 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0063_Layer-295_lamp_break.png
+  artifactKey: Guid(07e28aae9e057da44ac96c88e5493649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Architecture & Environment/Area specfic architecture/Greenpath/fung_new_0063_Layer-295_lamp_break.png using Guid(07e28aae9e057da44ac96c88e5493649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa8e40a8658aaa085c9a9c491e52e9e6') in 0.023831 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.329603 seconds.
+  path: Assets/Boss/Hornet Boss Cln_034.png
+  artifactKey: Guid(d6bc2d50b83ab6e47b8b42cbd5a54081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Boss/Hornet Boss Cln_034.png using Guid(d6bc2d50b83ab6e47b8b42cbd5a54081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f80e4ffef4efe10a52afe5a93d69e29') in 0.019044 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Boss/Hornet Boss Cln_036.png
+  artifactKey: Guid(63c0948d6fcf9e54ca10c57de7fc73dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Boss/Hornet Boss Cln_036.png using Guid(63c0948d6fcf9e54ca10c57de7fc73dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8be2a320958d06d27e6d08b8c5f05893') in 0.023484 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Boss/Hornet Boss Cln_038.png
+  artifactKey: Guid(e7b52c6ccd8c5fa4db829be1cf76fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Boss/Hornet Boss Cln_038.png using Guid(e7b52c6ccd8c5fa4db829be1cf76fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9c295f64f92781897bf593c04f31af1') in 0.023136 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 4.029401 seconds.
+  path: Assets/Enemies/Buzzer/Fly/Fly_000.png
+  artifactKey: Guid(f67513d8c68f6c340abcfa77310da344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemies/Buzzer/Fly/Fly_000.png using Guid(f67513d8c68f6c340abcfa77310da344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d60fb88ec118e26cc9fe409b68efcfe') in 0.021685 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Enemies/Buzzer/Fly/Fly_003.png
+  artifactKey: Guid(75915d2cba2ec3b4f998a449fa52d30b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemies/Buzzer/Fly/Fly_003.png using Guid(75915d2cba2ec3b4f998a449fa52d30b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f49ec2b75170bbef09949e601d28df69') in 0.208439 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.592 seconds
+Refreshing native plugins compatible for Editor in 6.35 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.719 seconds
+Domain Reload Profiling: 2307ms
+	BeginReloadAssembly (187ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (315ms)
+		LoadAssemblies (381ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (25ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1719ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (649ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (104ms)
+			ProcessInitializeOnLoadAttributes (449ms)
+			ProcessInitializeOnLoadMethodAttributes (74ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 7.80 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5933 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (321.9 KB). Loaded Objects now: 6803.
+Memory consumption went from 220.0 MB to 219.7 MB.
+Total: 6.474900 ms (FindLiveObjects: 0.889300 ms CreateObjectMapping: 0.578100 ms MarkObjects: 4.760200 ms  DeleteObjects: 0.245900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
